@@ -1,0 +1,4717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Swedish</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Kevin Tian" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Swedish</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9c7d18e">1. Swedish Learning</a>
+<ul>
+<li><a href="#orgcd2ea20">1.1. TASK</a>
+<ul>
+<li><a href="#org48838f7">1.1.1. temp - 2019-08-12&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org419444b">1.2. Vincent Class&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
+<ul>
+<li><a href="#orgf932a30">1.2.1. RUTINERNA&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a></li>
+<li><a href="#org1124ba1">1.2.2. 1st, Vicent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a></li>
+<li><a href="#org10aa6a6">1.2.3. 2nd, Vicent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a>
+<ul>
+<li><a href="#orgb08f4a5">1.2.3.1. Retro 2nd Class of Vincent</a></li>
+</ul>
+</li>
+<li><a href="#orgc0328bb">1.2.4. 3rd, Vicent</a></li>
+<li><a href="#org805aa63">1.2.5. 3rd Homework</a></li>
+<li><a href="#orgdfb3d34">1.2.6. 4th Class, 20200608</a>
+<ul>
+<li><a href="#orgccbd195">1.2.6.1. Review 4th Class</a></li>
+</ul>
+</li>
+<li><a href="#org8bd513e">1.2.7. 5th Class, 20200610</a>
+<ul>
+<li><a href="#org465705b">1.2.7.1. 5th Class Homework</a></li>
+</ul>
+</li>
+<li><a href="#orgbf3e954">1.2.8. 6th Class, f2f, 20200615</a></li>
+<li><a href="#orge808343">1.2.9. 7th Class</a>
+<ul>
+<li><a href="#org1e8e646">1.2.9.1. Finish Homework for 7th Class</a></li>
+</ul>
+</li>
+<li><a href="#orge4f6962">1.2.10. 8th Class, 20200624</a></li>
+<li><a href="#org1a4366d">1.2.11. 9th Class, 20200701</a></li>
+<li><a href="#org9b1242e">1.2.12. 10th Class, 20200706</a></li>
+<li><a href="#org4498cac">1.2.13. 11th Class, 20200708 Läsa kap. 7 till 8 i boken Ormblomman</a></li>
+<li><a href="#org3dd4aff">1.2.14. 12th Class, 20200713</a></li>
+<li><a href="#org9cd15f9">1.2.15. 13th Class, 20200715</a></li>
+<li><a href="#org798ac8a">1.2.16. 14th Class, 2020_07_13</a></li>
+<li><a href="#org808131f">1.2.17. 15th Class, 2020_07_15, Preview Ormblomman Kapt 10-13</a></li>
+<li><a href="#org8a42997">1.2.18. 20200729</a>
+<ul>
+<li><a href="#orgb6ba28d">1.2.18.1. Prepare: Lasar: Några urtidsdjur</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org59ec129">1.3. Word</a>
+<ul>
+<li><a href="#orge6af931">1.3.1. 2000 (500) Most Common Swedish Words&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9c7d18e" class="outline-2">
+<h2 id="org9c7d18e"><span class="section-number-2">1</span> Swedish Learning</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgcd2ea20" class="outline-3">
+<h3 id="orgcd2ea20"><span class="section-number-3">1.1</span> TASK</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org48838f7" class="outline-4">
+<h4 id="org48838f7"><span class="section-number-4">1.1.1</span> temp - 2019-08-12&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+:CAPTURED: 2019-08-12 17:09<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org419444b" class="outline-3">
+<h3 id="org419444b"><span class="section-number-3">1.2</span> Vincent Class&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgf932a30" class="outline-4">
+<h4 id="orgf932a30"><span class="section-number-4">1.2.1</span> RUTINERNA&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li><p>
+1. Hej! Hur mår du?<br />
+Jar mår bra, tack. Och du?<br />
+Jag mår inte bra. Och du?<br />
+</p>
+
+<p>
+Jag mår dåligt, jag sov inte bra. Och du?<br />
+Jag känner mig ledsen, min fru och dotter åkte tillbaka till Kina förra veckan.<br />
+</p>
+
+<ul class="org-ul">
+<li>Variation: Hur har du det idag?<br /></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>2. Vad är det för dag idag?<br />
+22(tjugoandra) juni, 2020<br />
+Idag är det måndag, 15 juni 2020<br />
+
+<ul class="org-ul">
+<li>Det är mondåg den trettonde juni 2020.<br /></li>
+
+<li>Variation<br />
+Det var söndag den tjugoåttonde juni 2020.<br />
+Vad var det för dag igår?<br /></li>
+
+<li>Ref<br />
+Det var söndag den tolfte juli.<br /></li>
+</ul></li>
+
+<li>3. Vad är det för väder idag?<br />
+Det är soligt idag.<br />
+Det är regnigt idag<br />
+solen skiner<br />
+Det är strålande väder<br />
+Det är regnigt och blåsigt idag.<br />
+Det är molnigt och lite kallt.<br />
+
+<ul class="org-ul">
+<li>2020_07_13_175053<br />
+Det är både soligt och molnigt. Dessutom är det behagligt.<br /></li>
+
+<li>Ref<br />
+Det har varit soligt och varmt i helgen.<br /></li>
+
+<li>Ref<br />
+Det var soligt och hett i helgen. Det även åskade och regnade i natt.<br /></li>
+</ul></li>
+
+<li><p>
+4. Vad gjorde du igår? (3 verb) or Vad gjorde du i helgen?<br />
+Jag körde till en sjö i Täby<br />
+Jag spelade fotboll med min dotter.<br />
+Jag tittade greta gris med min dotter<br />
+</p>
+
+<p>
+Jag körde till flygplatsen för min dotter och min fru.<br />
+</p>
+
+<ul class="org-ul">
+<li>Ref<br />
+Jag cyklade igår. Jag vilade. Jag åkte till Barkaby och sprang några ärenden. Jag åt glass och drack kall öl.<br /></li>
+
+<li>2020_07_13_175759<br />
+Jag vandrade på Tyrasta nationalpark igen.<br />
+Jag stådade upp balkogen.<br />
+Jag besåkte mina vänner på Täby.<br /></li>
+
+<li>2020_07_06_175018<br />
+Jag vandrade på Tyrasta nationalpark.<br />
+Jag skördade blåbär.<br />
+Jag såg några ekorrar.<br /></li>
+
+<li>20200629<br />
+Jag plockade Jordgubbar i helgen.<br />
+Jag gick för att få tillbaka min cykel.<br />
+Jag spelade disk med mina vänner.<br /></li>
+
+<li>20200621<br />
+Jag shoppade i ICA för nästa vecka.<br />
+Jag tagit min cyckel till butiken för att fixa den.<br />
+Jag köpte lite utrustning för sport, COMPASS, vandringsskor och etc.<br /></li>
+
+<li>20200615<br />
+Jag vandrade till en gård nära IKEA.<br />
+Jag städade upp mitt rum.<br />
+Jag kokade nötkött för den här veckan.<br /></li>
+
+<li><p>
+Ref<br />
+Jag drack vin i helgen.<br />
+Jag maratontittade på film.<br />
+Jag facetajmade med familjen.<br />
+Jag bytte sängkläder och jag tvättade.<br />
+Vad gjorde du i helgen? (5 verb, tack. 1 ska vara nytt!)<br />
+</p>
+
+<p>
+Jag renoverade en möbel i helg. Jag for till stranden och badade. Jag ringde min pappa på fars dag. Jag bokade en tid hos veterinären.<br />
+Jag tränade i helgen. Jag firade min födelsedag. Jag städade och tvättade. Jag ringde min syster.<br />
+</p></li>
+</ul></li>
+
+<li><p>
+5. Vad har du gjort idag? (3 verb)<br />
+Jag har hämtat? min mat från stormarknaden<br />
+Jag har jobbat alla dagar<br />
+Jag har hjälpt min dotter med sina läxor<br />
+</p>
+
+<p>
+Jag har gått i skolan för att returnera boken för min dotter.<br />
+</p>
+
+<ul class="org-ul">
+<li>2020_07_13_180247<br />
+Jag har hjälpt min mamma med sin dator.<br />
+Jag har jobbat hemifrån hela dagen.<br />
+Jag har provat NFC-funktionen för min Bluetooth-högtalare<br /></li>
+
+<li>2020_07_06_175818<br />
+Jag har lyssnat på videon av SwedishPod101.<br />
+Jag har kokt räkor till lunch.<br />
+Jag har fokuserat på mitt arbete i alla dagar.<br /></li>
+
+<li>20200629<br />
+Jag har hjälpt min dotter med sin test.<br />
+Jag har fogat många möten idag.<br />
+Jag har kokt en trevlig lunch idag.<br /></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>20200621<br />
+Jag har mappped min room idag.<br />
+Jag har pratat svenska på morgonen.<br />
+Jag har gått till sjön i närheten.<br /></li>
+
+<li>20200615<br />
+Jag har promenerat till sjön idag.<br />
+Jag har ringt min fru<br /></li>
+
+<li>FAMILJEN ANDERSSON<br />
+Här är familjen Andersson. De bor … komplettera texten här<br /></li>
+
+<li>Ref<br />
+Jag har träffat en elev på skolan idag.<br />
+Jag har planerat och rättat texter med mina kollegor.<br />
+Jag har bokat en leverans och jag har gått ut med hunden.<br />
+Jag har träffat några elever idag. Jag har fikat med en vän. Jag har fått en present.<br /></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1124ba1" class="outline-4">
+<h4 id="org1124ba1"><span class="section-number-4">1.2.2</span> 1st, Vicent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+<br />
+</p>
+<ul class="org-ul">
+<li>Simple swensca<br /></li>
+</ul>
+
+<p>
+Behagligt<br />
+avsluta<br />
+pressa<br />
+kasta<br />
+</p>
+
+<p>
+Berätta om en resa du har gjort.<br />
+Berätta om:<br />
+</p>
+<ul class="org-ul">
+<li>vart du reste?<br /></li>
+<li>varför du gjorde resan?<br /></li>
+<li>när du gjorde resan?<br /></li>
+<li>du reste ensam eller om du hade sällskap?<br /></li>
+<li>det hände något speciellt under resan?<br /></li>
+</ul>
+
+<p>
+Jag arbetade hemifrån<br />
+Jag åkte till Swedenh<br />
+Jag vill besöka min vän<br />
+Jag tog resan sommaren förra året<br />
+Jag gick med min fru och dotter.<br />
+Min dotter ville flytta till Sverige efter den här resan<br />
+humör<br />
+sovande<br />
+ämnet<br />
+motivering<br />
+</p>
+
+<p>
+Diskutera:<br />
+Studera på dagtid eller kvällstid?<br />
+</p>
+<ul class="org-ul">
+<li>Vad finns det för fördelar och nackdelar med att studera på dagtid?<br /></li>
+<li>Vad finns det för fördelar och nackdelar med att studera på kvällstid?<br /></li>
+<li>Hur studerar du? (Tips?)<br /></li>
+<li>Vad kan påverka hur och när jag studerar?<br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+Agenda<br />
+Onsdag 27 maj 2020<br />
+I Zoom:<br />
+</p>
+<ol class="org-ol">
+<li>Nya studenter = presentation<br /></li>
+</ol>
+<p>
+Vi välkomnar nya studenter. ”Välkommen!”<br />
+Vi presenterar oss:<br />
+</p>
+<ol class="org-ol">
+<li>ett namn Vincent<br /></li>
+<li>en ålder 42 år<br /></li>
+<li>ett land Frankrike<br /></li>
+<li>en familj särbo, en dotter och en dotterson, en hund<br /></li>
+<li>ett jobb lärare, översättare (”prof. Google Translate”)<br /></li>
+<li>en fritidsaktivitet: ukulele, studerar finska<br /></li>
+</ol>
+
+<p>
+TREVLIGT ATT TRÄFFAS!<br />
+En son - två söner<br />
+jogga<br />
+näringsterapeut (mat och kroppen)<br />
+simma<br />
+vandra<br />
+</p>
+
+<p>
+Rutinerna i grupper<br />
+</p>
+
+<p>
+en hälsning<br />
+ett datum<br />
+ett väder (behagligt)<br />
+preteritum<br />
+perfekt<br />
+</p>
+
+<p>
+Rutinerna i hel klass.<br />
+Samtal i grupper<br />
+Samtal i hel klass<br />
+</p>
+
+<p>
+I Google Classroom:<br />
+</p>
+
+<p>
+Quizlet<br />
+Hörsförståelse<br />
+</p></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org10aa6a6" class="outline-4">
+<h4 id="org10aa6a6"><span class="section-number-4">1.2.3</span> 2nd, Vicent&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+<br />
+</p>
+
+<p>
+Konstig, bisarr<br />
+</p>
+
+
+<p>
+SAMTALSÄMNE<br />
+Jobbet<br />
+</p>
+<ol class="org-ol">
+<li>Om du inte jobbade här, vad skulle du vilja göra då?<br /></li>
+
+<li>Varför ville du bli [jobbtitel]?<br /></li>
+
+<li>Vad blev du mest överraskad över när du började på ditt nya jobb?<br /></li>
+
+<li>Vad är det mest galna en chef bett dig att göra?<br /></li>
+
+<li>Skulle du hellre jobba fyra 10-timmarsdagar eller fem 8-timmarsdagar i veckan?<br /></li>
+
+<li>Om du kunde få vilket jobb som helst  vad skulle du vilja göra då?<br /></li>
+
+<li>Vilket var ditt första jobb? Gillade du det?<br /></li>
+
+<li>Vilket är det bästa karriärtipset du fått? Och det värsta?<br /></li>
+</ol>
+
+
+
+<p>
+Underhållning<br />
+</p>
+
+<ol class="org-ol">
+<li>Har du läst några bra böcker på sistone? Jag behöver lite tips! Några tv-serier?<br /></li>
+
+<li>Har du några mobilappar som du inte kan leva utan?<br /></li>
+
+<li>Om du bara fick kolla på en filmgenre resten av livet, vilken skulle du välja?<br /></li>
+
+<li>Finns det någon bok du hatat  men som alla andra älskat, och vice versa?<br /></li>
+
+<li>Har du något bra poddtips för mina pendlingsresor?<br /></li>
+
+<li>Vilken är den senaste filmen du grät till? Eller skrattade högt till?<br /></li>
+
+<li>Vem skulle du välja som Amazing Race-partner?<br /></li>
+
+<li>Vilket är ditt favoritkonto på Instagram?<br /></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+Mat<br />
+</p>
+
+<ol class="org-ol">
+<li>Om du bara fick äta en sak resten av livet, vad skulle du välja?<br /></li>
+
+<li>Vad är det konstigaste du ätit?<br /></li>
+
+<li>Vad äter du som tröstmat?<br /></li>
+
+<li>Finns det någon mat du absolut inte kan tänka dig att äta?<br /></li>
+
+<li>Har du några bra lunchställen att rekommendera här i området?<br /></li>
+
+<li>Har din familj något “hemligt” släktrecept?<br /></li>
+
+<li>Vilken är din favoritrestaurang som inte så många andra känner till?<br /></li>
+</ol>
+
+
+
+<p>
+Resor<br />
+</p>
+
+<ol class="org-ol">
+<li>Vad finns det för smultronställen jag absolut inte får missa här omkring?<br /></li>
+
+<li>Om du kunde flyga var som helst helt gratis, vart skulle du åka?<br /></li>
+
+<li>Vilken är den coolaste resan du gjorde?<br /></li>
+
+<li>Vart reste du senast? Vad gjorde du där?<br /></li>
+
+<li>Har du någon resa planerad framöver?<br /></li>
+
+<li>Om du kunde ta tjänstledigt i ett halvår, var skulle du åka och vad skulle du göra?<br /></li>
+
+<li>Hur spenderar du helst en helg?<br /></li>
+</ol>
+
+
+
+<p>
+Livet<br />
+</p>
+
+<ol class="org-ol">
+<li>Var bodde du innan du flyttade hit? Hur skiljer det sig från livet här?<br /></li>
+
+<li>Vad ville du bli när du var liten?<br /></li>
+
+<li>Har du någon hemlig talang?<br /></li>
+
+<li>Vilket ämne gillade du bäst i grundskolan?<br /></li>
+
+<li>Vad är det mest otippade som hänt dig?<br /></li>
+
+<li>Vilket är det bästa livsrådet du fått?<br /></li>
+</ol>
+
+
+
+<p>
+Allt möjligt<br />
+</p>
+
+<ol class="org-ol">
+<li>Om du fick bestämma världens åttonde underverk, vad skulle du välja då?<br /></li>
+
+<li>Du får undervisa i valfritt ämne på universitet, vad väljer du?<br /></li>
+
+<li>Vad är det mest otippade du någonsin gjort?<br /></li>
+
+<li>Vilken superkraft skulle du vilja ha?<br /></li>
+
+<li>Om du kunde ha vilket djur du ville som husdjur, vilket skulle du välja?<br /></li>
+
+<li>Har du någon gång kommit på en superhäftig uppfinning eller företagsidé, som det visade sig redan fanns?<br /></li>
+
+<li>Vilken uppfinning önskar du var din från början?<br /></li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgb08f4a5" class="outline-5">
+<h5 id="orgb08f4a5"><span class="section-number-5">1.2.3.1</span> Retro 2nd Class of Vincent</h5>
+<div class="outline-text-5" id="text-1-2-3-1">
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc0328bb" class="outline-4">
+<h4 id="orgc0328bb"><span class="section-number-4">1.2.4</span> 3rd, Vicent</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-06-03 Wed&gt;</span></span><br />
+Har du några mobilappar som du inte kan leva utan?<br />
+Vincent Fréchin 至 所有人6:17:44 PM<br />
+guida<br />
+Visa vägen<br />
+orienteringsproblem<br />
+Ett lokalsinne<br />
+Har inget lokalsinne<br />
+</p>
+
+<p>
+我 至 所有人6:45:18 PM<br />
+Jag skulle välja på? dansar med vargar<br />
+Vincent Fréchin 至 所有人6:47:27 PM<br />
+En annan idé / en andra idé<br />
+sakna<br />
+</p>
+
+<ul class="org-ul">
+<li><p>
+Free Talk<br />
+</p>
+<ol class="org-ol">
+<li>Har du några mobilappar som du inte kan leva utan?<br /></li>
+
+<li>Har du läst några bra böcker på sistone? Jag behöver lite tips! Några tv-serier?<br /></li>
+
+<li>Om du fick bestämma världens åttonde underverk, vad skulle du välja då?<br /></li>
+
+<li>Om du bara fick kolla på en filmgenre resten av livet, vilken skulle du välja?<br /></li>
+</ol>
+
+<p>
+Jag skulle välja på? dansar med vargar<br />
+</p>
+
+<ol class="org-ol">
+<li>Vilken är den senaste filmen du grät till? Eller skrattade högt till?<br /></li>
+
+<li>Vilken är den coolaste resan du gjorde?<br /></li>
+
+<li>Vart reste du senast? Vad gjorde du där?<br /></li>
+</ol>
+
+<p>
+vilke monologue ska vi göra? Jobbet eller Underhållning? eller alla?<br />
+</p>
+
+<ul class="org-ul">
+<li>Answer<br />
+I moved to Sweden for a better life<br />
+I worked here<br />
+better education for my daughter<br />
+better environment<br /></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org805aa63" class="outline-4">
+<h4 id="org805aa63"><span class="section-number-4">1.2.5</span> 3rd Homework</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<p>
+Skrivuppgift en tidningsartikel<br />
+100 points<br />
+</p>
+
+<p>
+Vincent Frechin<br />
+Jun 3<br />
+Titta på videon och skriv en tidningsartikel. Du får skriva om vad du vill.<br />
+Mejla inte. Jag får för många mejl och det är svårt att sortera.<br />
+</p>
+
+<ol class="org-ol">
+<li>Öppna worddokument i wordonline/i programmet word.<br /></li>
+<li>Du behöver inte spara. Stäng dokumentet.<br /></li>
+<li>Gå tillbaka till Google Classroom och klicka på "inlämning".<br /></li>
+</ol>
+
+<p>
+Artikel<br />
+<a href="https://classroom.google.com/u/0/c/Mjg2NjU1MjkwODNa/a/MTA4NTQxMTMwOTEx/details">https://classroom.google.com/u/0/c/Mjg2NjU1MjkwODNa/a/MTA4NTQxMTMwOTEx/details</a><br />
+</p>
+
+<p>
+Skriv din tidningsartikel här!<br />
+rubrik<br />
+  Samla in pengarna för lärargåvorna färdig.<br />
+ingress<br />
+</p>
+
+<p>
+brödtext<br />
+</p>
+
+<p>
+#Rubrik<br />
+Samla in pengarna för lärargåvorna färdig.<br />
+</p>
+
+<p>
+#Ingress<br />
+Föräldrakonsol skickade nyligen post för att samla in pengar för lärarnas gåvor, nu är arbetet avslutat.<br />
+</p>
+
+<p>
+#Rubrik<br />
+Detta är en tradition i Vittra-skolan, för att visa uppskattning till lärarna. De gjorde ett riktigt bra jobb under denna pandemiperiod.<br />
+</p>
+
+<p>
+Nu samlas pengarna in för varje klass, det totala beloppet är 8520 SEK. Planen är:<br />
+</p>
+<ul class="org-ul">
+<li>Föräldrarådet kommer att köpa presentkort och 1 blomma för lärarna och skolpersonalen.<br /></li>
+<li>Lärare och princip kommer att få cirka 450 kr / presentkort och resten av personalen (Fritids, kök, EHT och speciallärare) kommer att få cirka 200 kr.<br /></li>
+<li>Denna onsdag kommer gåvan att levereras till alla lärare och personal av representanten från föräldrarådet.<br /></li>
+</ul>
+
+<p>
+Föräldrarådet vill visa uppskattning för föräldrarnas förtroende.<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdfb3d34" class="outline-4">
+<h4 id="orgdfb3d34"><span class="section-number-4">1.2.6</span> 4th Class, 20200608</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<p>
+Diskutera<br />
+</p>
+
+<ol class="org-ol">
+<li>Nationaldag:<br /></li>
+<li>När är ditt lands nationaldag? Varför är det nationaldagen?<br /></li>
+<li>Hur firar man?<br /></li>
+
+<li>Diskutera teman i worddokumentet.<br /></li>
+</ol>
+
+<p>
+Diskutera<br />
+Man lär sig språk bäst genom att titta på TV.<br />
+Vad tycker ni?<br />
+Varför tycker ni så?<br />
+Diskutera med varandra.<br />
+</p>
+
+<p>
+Det är viktigt att prata det språk som talas i landet man åker till.<br />
+Vard tycker ni?<br />
+Varför tycker ni så?<br />
+Diskutera med varandra.<br />
+</p>
+
+
+
+<p>
+upptäcka<br />
+skärgård<br />
+Ett ärende<br />
+avboka<br />
+Säga upp<br />
+ kröning<br />
+</p>
+
+<p>
+gå<br />
+Gå av<br />
+lägga<br />
+Lägga till<br />
+Lägga till = addera<br />
+</p>
+
+<p>
+1Måndag den första juni<br />
+somrig<br />
+I helgen träffade jag…<br />
+Jag körde bil<br />
+我 至 所有人5:54:51 PM<br />
+Rosersberges<br />
+Rosersbergs<br />
+Vincent Fréchin 至 所有人5:55:57 PM<br />
+Jag läste<br />
+Vincent Fréchin 至 我私下。5:56:23 PM<br />
+Jag vandrade<br />
+I skogen<br />
+Vem frågar du?<br />
+</p>
+
+<p>
+var har for ihalidy<br />
+Jag har<br />
+Var har y i dag?<br />
+</p>
+
+
+<ul class="org-ul">
+<li><p>
+English Input<br />
+I feel sad, my wife and daughter went back to China last week.<br />
+today is Monday<br />
+</p>
+
+<p>
+I have gone to school to return the book for my daughter.<br />
+I drove to the airport to send my daughter<br />
+</p>
+
+<p>
+same with you<br />
+1st of October<br />
+first of October<br />
+vacation<br />
+flag, parade, flowers,<br />
+the reason<br />
+CCP<br />
+</p>
+
+<p>
+I do not think so<br />
+reading<br />
+listening<br />
+chat with people<br />
+watch video is important, but not best<br />
+use the language is the most important<br />
+you have to practice<br />
+</p>
+
+<p>
+agree<br />
+how long have you been here?<br />
+</p>
+
+<p>
+understanding the culture<br />
+see doctor<br />
+need speaking<br />
+</p>
+
+<p>
+You can use many resources in Swedish.<br />
+see you in other room<br />
+</p>
+
+<p>
+I agree with you<br />
+</p>
+
+<p>
+send the word flashcard to us<br />
+</p></li>
+
+<li><p>
+Swedish Input<br />
+soligt<br />
+</p>
+
+<p>
+Diskutera<br />
+</p>
+
+<ol class="org-ol">
+<li>Nationaldag:<br /></li>
+<li>När är ditt lands nationaldag? Varför är det nationaldagen?<br /></li>
+<li>Hur firar man?<br /></li>
+
+<li>Diskutera teman i worddokumentet.<br /></li>
+</ol></li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgccbd195" class="outline-5">
+<h5 id="orgccbd195"><span class="section-number-5">1.2.6.1</span> Review 4th Class</h5>
+<div class="outline-text-5" id="text-1-2-6-1">
+<p>
+<br />
+</p>
+<ul class="org-ul">
+<li>Homework<br /></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org8bd513e" class="outline-4">
+<h4 id="org8bd513e"><span class="section-number-4">1.2.7</span> 5th Class, 20200610</h4>
+<div class="outline-text-4" id="text-1-2-7">
+<p>
+ihåg<br />
+upp<br />
+om<br />
+varm<br />
+igår<br />
+listen<br />
+hund<br />
+fördelar<br />
+finns<br />
+wonder<br />
+något<br />
+absorb<br />
+fysik<br />
+matematik<br />
+ner<br />
+trappen<br />
+rummet<br />
+ses<br />
+</p>
+</div>
+
+<div id="outline-container-org465705b" class="outline-5">
+<h5 id="org465705b"><span class="section-number-5">1.2.7.1</span> 5th Class Homework</h5>
+<div class="outline-text-5" id="text-1-2-7-1">
+<p>
+<br />
+</p>
+
+<ul class="org-ul">
+<li class="on"><span class="check">&#x2611;</span> FACIT PARTIKELVERB SIDA 3<br />
+<ol class="org-ol">
+<li>Jag går ur tavlan<br /></li>
+<li>Hon tog på sig jackan och mössan och gick ut.<br /></li>
+<li>Hon tog av sig tröjan, för att det är varmt.<br /></li>
+<li>Kan du ta ut brödet ur ugnen?<br /></li>
+<li>Hon försökte ta bort smutsen på jackan.<br /></li>
+<li>Hon tog ut en bok ur väskan och visade den för oss.<br /></li>
+<li>Ska jag ta med någon mat till festen?<br /></li>
+<li>Kan du ta ner kartan? Jag når inte.<br /></li>
+<li>Han tog upp mössan från marken som någon hade tappat.<br /></li>
+<li>Pojken tog med sin syster på en fotbollsmatch.<br /></li>
+</ol></li>
+
+<li class="on"><span class="check">&#x2611;</span> <p>
+Mdia - TV<br />
+</p>
+<ol class="org-ol">
+<li>Välj en nyhet (klicka på länken)<br /></li>
+</ol>
+<p>
+2.Titta och lyssna på en nyhet från programmet Nyheter på lätt svenska.<br />
+</p>
+<ol class="org-ol">
+<li>Skriv en lista med nya ord och använd varje ord i en mening som du skriver själv (Ingen Google)<br /></li>
+</ol></li>
+</ul>
+
+<p>
+Berätta om din nyhet (med ditt eget språk)<br />
+</p>
+
+<p>
+skriv här ….<br />
+</p>
+
+<p>
+Varje dag under sommaren, Dem ska prata i radio i sommar. Programmet heter<br />
+Sommar. Det här är en Svenska tradition. Några av dem ha en lång<br />
+personlighet. Greta Thunberg våga kritisera presidenten. Anders Tegnell löste<br />
+ett annat sått att hantera COVID-19.<br />
+</p>
+
+<p>
+Skriv din ordlista och egna meningar här.<br />
+</p>
+
+<p>
+skriv här &#x2026;<br />
+</p>
+
+<p>
+Varje - Varje dag under sommaren, Jag ska vandra och prata svenska.<br />
+heter - vet du vad det heter?<br />
+är några av dem - Några av dem känner deras orolig för COVID-19.<br />
+har blivit känd - Han har blivit känd i hela världen för hans ord.<br />
+</p>
+
+<p>
+<a href="https://8sidor.se/kultur/2020/06/de-ar-klara-for-sommar/">https://8sidor.se/kultur/2020/06/de-ar-klara-for-sommar/</a><br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf3e954" class="outline-4">
+<h4 id="orgbf3e954"><span class="section-number-4">1.2.8</span> 6th Class, f2f, 20200615</h4>
+<div class="outline-text-4" id="text-1-2-8">
+<p>
+En kärlekssag<br />
+</p>
+
+<ol class="org-ol">
+<li>Studera in dem nya orden med Quizlet.<br /></li>
+<li>Titta på "bildkartan" och lyssna på texten flera gånger.<br /></li>
+<li>Svara på frågorna i quizz-formuläret.<br /></li>
+<li>Titta, reflektera och gör övningarna med "Konjunktioner" och "Bisatser". Vad<br />
+karaktäriserar en konjunktion och vad karaktäriserar en bisats? De blir en<br />
+diskussion i Zoom på onsdag. =)<br /></li>
+</ol>
+
+<p>
+Lycka till!<br />
+</p>
+
+<ul class="org-ul">
+<li><p>
+<a href="https://quizlet.com/381383338/en-karlekssaga-flash-cards/">https://quizlet.com/381383338/en-karlekssaga-flash-cards/</a><br />
+en modell<br />
+ett världskrig<br />
+</p>
+
+<p>
+gifta sig<br />
+</p></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orge808343" class="outline-4">
+<h4 id="orge808343"><span class="section-number-4">1.2.9</span> 7th Class</h4>
+<div class="outline-text-4" id="text-1-2-9">
+<p>
+Inte jag heller<br />
+Jag med<br />
+</p>
+
+<p>
+Inte jag heller<br />
+Jag med<br />
+Solen spricker upp<br />
+lova - utlova<br />
+Utforska = explorera<br />
+motta<br />
+Ta emot<br />
+En konjunktion vindar två meningar (och, men, så)<br />
+</p>
+
+
+<p>
+Zoom 群聊<br />
+Vincent Fréchin 对 所有人<br />
+Negation i bisats kommer alltid före verbet<br />
+</p>
+</div>
+
+<div id="outline-container-org1e8e646" class="outline-5">
+<h5 id="org1e8e646"><span class="section-number-5">1.2.9.1</span> Finish Homework for 7th Class</h5>
+<div class="outline-text-5" id="text-1-2-9-1">
+<p>
+<br />
+<br />
+<br />
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge4f6962" class="outline-4">
+<h4 id="orge4f6962"><span class="section-number-4">1.2.10</span> 8th Class, 20200624</h4>
+<div class="outline-text-4" id="text-1-2-10">
+<p>
+En huvudkaraktär<br />
+Henry = 49, gift men ska skilja sig, svensklärare<br />
+Urban = skolkompis<br />
+Urban skriver en bok<br />
+Henry åker till sin hemstad<br />
+Han får ett brev från Ormblomman.<br />
+Ormblomman = Vera Kall<br />
+Vera Kall är dotter till en präst.<br />
+Hon var en skolkamrat.<br />
+Hon försvann efter en fest för 30 år sedan.<br />
+Ord att memorera = fundera<br />
+minnas<br />
+Det var längesen<br />
+trakter<br />
+återvända<br />
+Ge sig iväg = gå<br />
+Inte heller<br />
+gissa<br />
+plötsligt<br />
+Vara tvungen att<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1a4366d" class="outline-4">
+<h4 id="org1a4366d"><span class="section-number-4">1.2.11</span> 9th Class, 20200701</h4>
+<div class="outline-text-4" id="text-1-2-11">
+<p>
+<br />
+</p>
+
+<p>
+cover chap 4-6, homework 7-9<br />
+</p>
+
+<p>
+Vincent Fréchin 对 所有人6:22:01 PM<br />
+deckare<br />
+Slå ihjäl = dö<br />
+döda<br />
+skratta<br />
+</p>
+
+<p>
+konstig<br />
+vingla<br />
+</p>
+
+<p>
+konstig<br />
+vingla<br />
+fnissa<br />
+Dra några djupa andetag<br />
+</p>
+
+<p>
+Vincent Fréchin 对 所有人6:56:39 PM<br />
+konstig<br />
+vingla<br />
+fnissa<br />
+Dra några djupa andetag<br />
+kyssas<br />
+Ligga med varandra<br />
+</p>
+
+<p>
+konstig<br />
+vingla<br />
+fnissa<br />
+Dra några djupa andetag<br />
+kyssas<br />
+Ligga med varandra<br />
+Ett snedsteg = ett misstag/ett fel<br />
+svartna<br />
+slarvig<br />
+plötsligt<br />
+= utan varning<br />
+</p>
+
+<p>
+Vincent Fréchin 对 所有人6:56:39 PM<br />
+konstig<br />
+vingla<br />
+fnissa<br />
+Dra några djupa andetag<br />
+kyssas<br />
+Ligga med varandra<br />
+Ett snedsteg = ett misstag/ett fel<br />
+svartna<br />
+slarvig<br />
+plötsligt<br />
+= utan varning<br />
+Ett skämt<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9b1242e" class="outline-4">
+<h4 id="org9b1242e"><span class="section-number-4">1.2.12</span> 10th Class, 20200706</h4>
+<div class="outline-text-4" id="text-1-2-12">
+<p>
+Rutinerna<br />
+Hörförståelse<br />
+Svara på frågor i Google Formulär<br />
+Ordförråd<br />
+</p>
+<ul class="org-ul">
+<li>Möte på skolan med de som önskar det<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4498cac" class="outline-4">
+<h4 id="org4498cac"><span class="section-number-4">1.2.13</span> 11th Class, 20200708 Läsa kap. 7 till 8 i boken Ormblomman</h4>
+<div class="outline-text-4" id="text-1-2-13">
+<p>
+<br />
+<br />
+</p>
+
+<p>
+Rutinerna<br />
+Boksamtal<br />
+Läsa kap. 10 till 13 i boken Ormblomman<br />
+</p>
+
+<ul class="org-ul">
+<li>Prepare<br />
+Finiished Ormblomman kapter 7-8<br /></li>
+
+<li>Jag blandade ihop en gammal uppgift och den nya uppgiften igår. Nu kan ni öppna filen "Hemligheten med ett långt liv" och svara på frågorna i den. =)<br /></li>
+</ul>
+<p>
+Jag ber om ursäkt för detta.<br />
+Vi ses kl. 17.30.<br />
+</p>
+
+<ul class="org-ul">
+<li>ta reda på = hitta information<br /></li>
+</ul>
+
+<p>
+ta reda på = hitta information<br />
+hinna = ha tid<br />
+ett lik = en död kropp<br />
+påstå = säga<br />
+köra/åka/gå vilse = inte hitta rätt plats<br />
+Förfärlig = fruktansvärt = mycket mycket dålig<br />
+horribel<br />
+Vara i livet = inte vara död<br />
+Känna till = ”veta”<br />
+Antagligen = ”jag tror"<br />
+</p>
+
+<p>
+mager = mycket smal<br />
+</p>
+
+<p>
+Vincent Fréchin 对 所有人7:05:34 PM<br />
+ta reda på = hitta information<br />
+hinna = ha tid<br />
+ett lik = en död kropp<br />
+påstå = säga<br />
+köra/åka/gå vilse = inte hitta rätt plats<br />
+Förfärlig = fruktansvärt = mycket mycket dålig<br />
+horribel<br />
+Vara i livet = inte vara död<br />
+Känna till = ”veta”<br />
+Antagligen = ”jag tror"<br />
+mager = mycket smal<br />
+hålla tyst = inte säga något till någon<br />
+underlig = konstig<br />
+Oavsett = ”ingenting är viktigt!<br />
+Vrida sig = röra sig hela tiden i sängen<br />
+Klarna upp = bli ljusare/bättre<br />
+En förare = person som kör bil, tåg, buss, &#x2026;<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org3dd4aff" class="outline-4">
+<h4 id="org3dd4aff"><span class="section-number-4">1.2.14</span> 12th Class, 20200713</h4>
+<div class="outline-text-4" id="text-1-2-14">
+<p>
+Rutinerna<br />
+Hörförståelse<br />
+Svara på frågor i Google Formulär<br />
+Ordförråd<br />
+</p>
+<ul class="org-ul">
+<li>Träningstest (ni vet vilka)<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9cd15f9" class="outline-4">
+<h4 id="org9cd15f9"><span class="section-number-4">1.2.15</span> 13th Class, 20200715</h4>
+<div class="outline-text-4" id="text-1-2-15">
+<p>
+Rutinerna<br />
+Samtal i Zoom<br />
+Skrivuppgift<br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org798ac8a" class="outline-4">
+<h4 id="org798ac8a"><span class="section-number-4">1.2.16</span> 14th Class, 2020_07_13</h4>
+</div>
+
+<div id="outline-container-org808131f" class="outline-4">
+<h4 id="org808131f"><span class="section-number-4">1.2.17</span> 15th Class, 2020_07_15, Preview Ormblomman Kapt 10-13</h4>
+<div class="outline-text-4" id="text-1-2-17">
+<p>
+<br />
+</p>
+
+<ul class="org-ul">
+<li class="off"><span class="checkbox">&#x2610;</span> write summary of the book<br /></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8a42997" class="outline-4">
+<h4 id="org8a42997"><span class="section-number-4">1.2.18</span> 20200729</h4>
+<div class="outline-text-4" id="text-1-2-18">
+</div>
+<div id="outline-container-orgb6ba28d" class="outline-5">
+<h5 id="orgb6ba28d"><span class="section-number-5">1.2.18.1</span> Prepare: Lasar: Några urtidsdjur</h5>
+<div class="outline-text-5" id="text-1-2-18-1">
+<p>
+Dinosaurier är djur som levde på jorden för mycket länge sedan, långt innan det fanns människor. En del dinosaurier var små som kycklingar, andra stora som trevåningshus.<br />
+5 En dag år 1812 var en ung flicka i sydvästra England ute och<br />
+klättrade bland klipporna vid havet. Hon letade efter ovan liga stenar. Plötsligt fick hon se något konstigt i berget. Det var ett stort skelett som var tre meter långt och hade långa<br />
+vassa tänder i munnen. 10 Nyheten om det stora skelettet spred sig snabbt i trakten.<br />
+Ingen kunde förklara vad det var. Ryktet nådde snart London och några forskare kom ner till kusten för att undersöka skelettet. De förstod snart att det var fossil efter<br />
+en dinosaurie, som flickan hade hittat. Fossil är skelett, 15 tänder och fotavtryck som tiden har förvandlat till sten<br />
+under miljontals år.<br />
+I början av 1800-talet var det inte många som ville tro att det hade funnits liv på jorden innan det fanns människor.<br />
+Kyrkans makt var stor i Europa och Bibeln var nyckeln till 20 historien. Samtidigt gick den naturvetenskapliga forskning-<br />
+en framåt. Vetenskapsmännen studerade fossil för att få veta hur djur och växter hade sett ut för länge sedan. De visste att många olika djur hade levt i haven redan för 600 mil joner år sedan.<br />
+Över hela världen hade man sedan länge hittat fossil efter dinosaurier. Men först på 1800-talet förstod forskarna att benen kom från djur som hade levt för miljontals år sedan. Då började jakten på skelett. Alla ville komma först med<br />
+nya upptäckter. 30 Fossiljägare gav sig ut på långa, farliga resor genom<br />
+öknar och bergslandskap för att leta efter ben. En del skelett var otroligt stora. Forskarna studerade skelettens tänder och förstod att en del djur hade levt på växter, medan andra<br />
+hade varit köttätare. Den största köttätaren kallade man 35 Tyrannosaurus. Den kunde bli 16 meter lång och 6 meter<br />
+hög. Troligen kunde den springa 50 kilometer i timmen. Även växtätarna kunde bli stora och långa. Men eftersom<br />
+6 klättra (klättrar, klättrade,<br />
+klättrat) flytta sig uppåt eller nedåt med händer eller<br />
+fötter 6 klippa (-an; -or) en del av<br />
+ett berg där det inte växer<br />
+något 8 skelett (-et; =) alla ben i<br />
+kroppen 10 sprida sig (sprider, spred,<br />
+spridit) (här) gå från person<br />
+till person 10 trakt (-en; -er) område 11 rykte (-et; -en) uppgift som<br />
+kanske inte är sann 12 forskare (-en; =) person<br />
+som har till yrke att studera<br />
+eller undersöka något 15 fotavtryck (-et; =) märke av<br />
+fot i marken 15 förvandla (förvandlar, för<br />
+vandlade, förvandlat)<br />
+förändra, ändra 28 jakt (-en; -er) när man föl<br />
+jer 'efter någon för att fånga<br />
+honom eller henne 29 upptäckt (-en; -er) något<br />
+som man hittar och inte<br />
+visste att det fanns 31 öken (öknen; öknar) ett<br />
+mycket torrt område med<br />
+mycket sand 31 landskap (-et; =) område,<br />
+provins, distrikt<br />
+Några urtidsdjur 7<br />
+38 offer (offret; =) någon<br />
+som blir skadad eller<br />
+dödad<br />
+V<br />
+W<br />
+40 horn (-et; =)<br />
+40 tagg (-en; -ar)<br />
+de rörde sig långsamt, blev de lätt offer för köttätarnas vassa<br />
+tänder. Mot slutet av dinosauriernas tid på jorden fanns det 40 växtätare som hade horn på huvudet och taggar på hela kroppen. De kunde försvara sig bättre mot sina fiender.<br />
+Dinosaurierna levde på jorden i mer än 150 miljoner år. Ingen vet varför de dog ut. Några forskare trodde att det<br />
+berodde på klimatet. För 65 miljoner år sedan började det 45 att bli kallare på jorden och dinosaurierna, som var kräldjur<br />
+och lade ägg, hade svårt att anpassa sig. Djur med päls som födde levande ungar, däggdjur, klarade sig bättre.<br />
+Men några släktingar till dinosaurierna har överlevt fram till våra dagar. Sköldpaddor, 50 ormar, ödlor och<br />
+krokodiler är djur som har trivts på jorden i ett par hundra miljoner år.<br />
+41 försvara (försvarar, försva<br />
+rade, försvarat) skydda sig 44 bero på (beror, berodde,<br />
+berott) vara en följd av 45 kräldjur (-et; =) en grupp<br />
+djur t ex ormar, ödlor 46 anpassa sig (anpassar,<br />
+anpassade, anpassat) rätta sig efter, vänja sig, integrera<br />
+Läs och förstå Vad står det i texten? Kryssa för rätt alternativ.<br />
+1 Dinosaurierna levde i sydvästra England på 1800-talet.<br />
+a O b a c. O<br />
+rätt fel inte i texten<br />
+2 Flickan brukade ofta klättra bland klipporna vid havet.<br />
+a b c<br />
+rätt fel inte i texten<br />
+3 Snart visste många att flickan hade hittat ett stort skelett.<br />
+a rätt b a fel ca inte i texten<br />
+8 Sagor och sanningar<br />
+38 offer (offret; =) någon<br />
+som blir skadad eller<br />
+dödad<br />
+4 Bara forskarna från London fick titta på skelettet.<br />
+a O rätt<br />
+b fel c inte i texten<br />
+40 horn (-et; =)<br />
+40 tagg (-en; -ar)<br />
+5 Vetenskapsmännen förstod att livet på jorden inte hade börjat med människan.<br />
+a O rätt bofel<br />
+c inte i texten<br />
+41 försvara (försvarar, försva<br />
+rade, försvarat) skydda sig 44 bero på (beror, berodde,<br />
+berott) vara en följd av 45 kräldjur (-et; =) en grupp<br />
+djur t ex ormar, ödlor 46 anpassa sig (anpassar,<br />
+anpassade, anpassat) rätta sig efter, vänja sig, integrera<br />
+6 Först på 1800-talet började man hitta fossil efter dinosaurier.<br />
+a rätt b fel cointe i texten<br />
+7 Många fossiljägare dog under sina farliga resor.<br />
+a rätt b fel ceinte i texten<br />
+8 Skelettens tänder visade att alla dinosaurier inte hade varit köttätare.<br />
+a b C D<br />
+rätt fel inte i texten<br />
+9 Många växtätare kunde inte springa så fort.<br />
+a O rätt b a fel ca inte i texten<br />
+10 Däggdjur har funnits längre än sköldpaddor, ormar, ödlor och krokodiler.<br />
+a O rätt b fel C D inte i texten<br />
+Några urtidsdjur 9<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org59ec129" class="outline-3">
+<h3 id="org59ec129"><span class="section-number-3">1.3</span> Word</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orge6af931" class="outline-4">
+<h4 id="orge6af931"><span class="section-number-4">1.3.1</span> 2000 (500) Most Common Swedish Words&#xa0;&#xa0;&#xa0;<span class="tag"><span class="export">export</span></span></h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+Rank Swedish English Notes<br />
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">jag</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">det</td>
+<td class="org-left">the</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">är</td>
+<td class="org-left">is</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">du</td>
+<td class="org-left">you</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">inte</td>
+<td class="org-left">not</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">att</td>
+<td class="org-left">to</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">en</td>
+<td class="org-left">one</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">och</td>
+<td class="org-left">and</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">har</td>
+<td class="org-left">has</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">vi</td>
+<td class="org-left">we</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">på</td>
+<td class="org-left">on</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">i</td>
+<td class="org-left">in</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">för</td>
+<td class="org-left">for</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">han</td>
+<td class="org-left">he</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-left">vad</td>
+<td class="org-left">What</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-left">med</td>
+<td class="org-left">with</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-left">mig</td>
+<td class="org-left">me</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-left">som</td>
+<td class="org-left">as</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-left">här</td>
+<td class="org-left">here</td>
+</tr>
+
+<tr>
+<td class="org-right">20</td>
+<td class="org-left">om</td>
+<td class="org-left">if</td>
+</tr>
+
+<tr>
+<td class="org-right">21</td>
+<td class="org-left">dig</td>
+<td class="org-left">you</td>
+</tr>
+
+<tr>
+<td class="org-right">22</td>
+<td class="org-left">var</td>
+<td class="org-left">where</td>
+</tr>
+
+<tr>
+<td class="org-right">23</td>
+<td class="org-left">den</td>
+<td class="org-left">the</td>
+</tr>
+
+<tr>
+<td class="org-right">24</td>
+<td class="org-left">så</td>
+<td class="org-left">so</td>
+</tr>
+
+<tr>
+<td class="org-right">25</td>
+<td class="org-left">till</td>
+<td class="org-left">to</td>
+</tr>
+
+<tr>
+<td class="org-right">26</td>
+<td class="org-left">kan</td>
+<td class="org-left">can</td>
+</tr>
+
+<tr>
+<td class="org-right">27</td>
+<td class="org-left">de</td>
+<td class="org-left">the</td>
+</tr>
+
+<tr>
+<td class="org-right">28</td>
+<td class="org-left">ni</td>
+<td class="org-left">you</td>
+</tr>
+
+<tr>
+<td class="org-right">29</td>
+<td class="org-left">ska</td>
+<td class="org-left">should</td>
+</tr>
+
+<tr>
+<td class="org-right">30</td>
+<td class="org-left">ett</td>
+<td class="org-left">one</td>
+</tr>
+
+<tr>
+<td class="org-right">31</td>
+<td class="org-left">men</td>
+<td class="org-left">but</td>
+</tr>
+
+<tr>
+<td class="org-right">32</td>
+<td class="org-left">av</td>
+<td class="org-left">of</td>
+</tr>
+
+<tr>
+<td class="org-right">33</td>
+<td class="org-left">vill</td>
+<td class="org-left">wants</td>
+</tr>
+
+<tr>
+<td class="org-right">34</td>
+<td class="org-left">nu</td>
+<td class="org-left">now</td>
+</tr>
+
+<tr>
+<td class="org-right">35</td>
+<td class="org-left">ja</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-right">36</td>
+<td class="org-left">vet</td>
+<td class="org-left">know</td>
+</tr>
+
+<tr>
+<td class="org-right">37</td>
+<td class="org-left">nej</td>
+<td class="org-left">No</td>
+</tr>
+
+<tr>
+<td class="org-right">38</td>
+<td class="org-left">bara</td>
+<td class="org-left">only</td>
+</tr>
+
+<tr>
+<td class="org-right">39</td>
+<td class="org-left">hon</td>
+<td class="org-left">she</td>
+</tr>
+
+<tr>
+<td class="org-right">40</td>
+<td class="org-left">kommer</td>
+<td class="org-left">comes</td>
+</tr>
+
+<tr>
+<td class="org-right">41</td>
+<td class="org-left">hur</td>
+<td class="org-left">how</td>
+</tr>
+
+<tr>
+<td class="org-right">42</td>
+<td class="org-left">min</td>
+<td class="org-left">my</td>
+</tr>
+
+<tr>
+<td class="org-right">43</td>
+<td class="org-left">där</td>
+<td class="org-left">where</td>
+</tr>
+
+<tr>
+<td class="org-right">44</td>
+<td class="org-left">honom</td>
+<td class="org-left">him</td>
+</tr>
+
+<tr>
+<td class="org-right">45</td>
+<td class="org-left">gör</td>
+<td class="org-left">make</td>
+</tr>
+
+<tr>
+<td class="org-right">46</td>
+<td class="org-left">kom</td>
+<td class="org-left">came</td>
+</tr>
+
+<tr>
+<td class="org-right">47</td>
+<td class="org-left">måste</td>
+<td class="org-left">must</td>
+</tr>
+
+<tr>
+<td class="org-right">48</td>
+<td class="org-left">din</td>
+<td class="org-left">your</td>
+</tr>
+
+<tr>
+<td class="org-right">49</td>
+<td class="org-left">skulle</td>
+<td class="org-left">would</td>
+</tr>
+
+<tr>
+<td class="org-right">50</td>
+<td class="org-left">då</td>
+<td class="org-left">then</td>
+</tr>
+
+<tr>
+<td class="org-right">51</td>
+<td class="org-left">bra</td>
+<td class="org-left">Good</td>
+</tr>
+
+<tr>
+<td class="org-right">52</td>
+<td class="org-left">när</td>
+<td class="org-left">when</td>
+</tr>
+
+<tr>
+<td class="org-right">53</td>
+<td class="org-left">ha</td>
+<td class="org-left">have</td>
+</tr>
+
+<tr>
+<td class="org-right">54</td>
+<td class="org-left">er</td>
+<td class="org-left">your</td>
+</tr>
+
+<tr>
+<td class="org-right">55</td>
+<td class="org-left">ta</td>
+<td class="org-left">take</td>
+</tr>
+
+<tr>
+<td class="org-right">56</td>
+<td class="org-left">ut</td>
+<td class="org-left">out</td>
+</tr>
+
+<tr>
+<td class="org-right">57</td>
+<td class="org-left">får</td>
+<td class="org-left">may</td>
+</tr>
+
+<tr>
+<td class="org-right">58</td>
+<td class="org-left">man</td>
+<td class="org-left">MAN</td>
+</tr>
+
+<tr>
+<td class="org-right">59</td>
+<td class="org-left">vara</td>
+<td class="org-left">be</td>
+</tr>
+
+<tr>
+<td class="org-right">60</td>
+<td class="org-left">oss</td>
+<td class="org-left">U.S</td>
+</tr>
+
+<tr>
+<td class="org-right">61</td>
+<td class="org-left">göra</td>
+<td class="org-left">do</td>
+</tr>
+
+<tr>
+<td class="org-right">62</td>
+<td class="org-left">dem</td>
+<td class="org-left">them</td>
+</tr>
+
+<tr>
+<td class="org-right">63</td>
+<td class="org-left">eller</td>
+<td class="org-left">or</td>
+</tr>
+
+<tr>
+<td class="org-right">64</td>
+<td class="org-left">varför</td>
+<td class="org-left">why</td>
+</tr>
+
+<tr>
+<td class="org-right">65</td>
+<td class="org-left">alla</td>
+<td class="org-left">all</td>
+</tr>
+
+<tr>
+<td class="org-right">66</td>
+<td class="org-left">från</td>
+<td class="org-left">from</td>
+</tr>
+
+<tr>
+<td class="org-right">67</td>
+<td class="org-left">okej</td>
+<td class="org-left">okay</td>
+</tr>
+
+<tr>
+<td class="org-right">68</td>
+<td class="org-left">upp</td>
+<td class="org-left">up</td>
+</tr>
+
+<tr>
+<td class="org-right">69</td>
+<td class="org-left">tror</td>
+<td class="org-left">think</td>
+</tr>
+
+<tr>
+<td class="org-right">70</td>
+<td class="org-left">igen</td>
+<td class="org-left">again</td>
+</tr>
+
+<tr>
+<td class="org-right">71</td>
+<td class="org-left">gå</td>
+<td class="org-left">go</td>
+</tr>
+
+<tr>
+<td class="org-right">72</td>
+<td class="org-left">tack</td>
+<td class="org-left">thanks</td>
+</tr>
+
+<tr>
+<td class="org-right">73</td>
+<td class="org-left">sa</td>
+<td class="org-left">said</td>
+</tr>
+
+<tr>
+<td class="org-right">74</td>
+<td class="org-left">hade</td>
+<td class="org-left">had</td>
+</tr>
+
+<tr>
+<td class="org-right">75</td>
+<td class="org-left">allt</td>
+<td class="org-left">all</td>
+</tr>
+
+<tr>
+<td class="org-right">76</td>
+<td class="org-left">in</td>
+<td class="org-left">in</td>
+</tr>
+
+<tr>
+<td class="org-right">77</td>
+<td class="org-left">sig</td>
+<td class="org-left">to</td>
+</tr>
+
+<tr>
+<td class="org-right">78</td>
+<td class="org-left">se</td>
+<td class="org-left">see</td>
+</tr>
+
+<tr>
+<td class="org-right">79</td>
+<td class="org-left">ingen</td>
+<td class="org-left">No</td>
+</tr>
+
+<tr>
+<td class="org-right">80</td>
+<td class="org-left">få</td>
+<td class="org-left">get</td>
+</tr>
+
+<tr>
+<td class="org-right">81</td>
+<td class="org-left">henne</td>
+<td class="org-left">her</td>
+</tr>
+
+<tr>
+<td class="org-right">82</td>
+<td class="org-left">lite</td>
+<td class="org-left">a</td>
+</tr>
+
+<tr>
+<td class="org-right">83</td>
+<td class="org-left">mycket</td>
+<td class="org-left">very</td>
+</tr>
+
+<tr>
+<td class="org-right">84</td>
+<td class="org-left">vem</td>
+<td class="org-left">who</td>
+</tr>
+
+<tr>
+<td class="org-right">85</td>
+<td class="org-left">går</td>
+<td class="org-left">goes</td>
+</tr>
+
+<tr>
+<td class="org-right">86</td>
+<td class="org-left">ser</td>
+<td class="org-left">looks</td>
+</tr>
+
+<tr>
+<td class="org-right">87</td>
+<td class="org-left">mitt</td>
+<td class="org-left">my</td>
+</tr>
+
+<tr>
+<td class="org-right">88</td>
+<td class="org-left">hej</td>
+<td class="org-left">Hello</td>
+</tr>
+
+<tr>
+<td class="org-right">89</td>
+<td class="org-left">aldrig</td>
+<td class="org-left">Never</td>
+</tr>
+
+<tr>
+<td class="org-right">90</td>
+<td class="org-left">kanske</td>
+<td class="org-left">perhaps</td>
+</tr>
+
+<tr>
+<td class="org-right">91</td>
+<td class="org-left">behöver</td>
+<td class="org-left">requires</td>
+</tr>
+
+<tr>
+<td class="org-right">92</td>
+<td class="org-left">finns</td>
+<td class="org-left">are</td>
+</tr>
+
+<tr>
+<td class="org-right">93</td>
+<td class="org-left">nåt</td>
+<td class="org-left">something</td>
+</tr>
+
+<tr>
+<td class="org-right">94</td>
+<td class="org-left">blir</td>
+<td class="org-left">gets</td>
+</tr>
+
+<tr>
+<td class="org-right">95</td>
+<td class="org-left">än</td>
+<td class="org-left">than</td>
+</tr>
+
+<tr>
+<td class="org-right">96</td>
+<td class="org-left">inget</td>
+<td class="org-left">nothing</td>
+</tr>
+
+<tr>
+<td class="org-right">97</td>
+<td class="org-left">efter</td>
+<td class="org-left">after</td>
+</tr>
+
+<tr>
+<td class="org-right">98</td>
+<td class="org-left">bli</td>
+<td class="org-left">Become</td>
+</tr>
+
+<tr>
+<td class="org-right">99</td>
+<td class="org-left">något</td>
+<td class="org-left">something</td>
+</tr>
+
+<tr>
+<td class="org-right">100</td>
+<td class="org-left">ju</td>
+<td class="org-left">The</td>
+</tr>
+
+<tr>
+<td class="org-right">101</td>
+<td class="org-left">två</td>
+<td class="org-left">two</td>
+</tr>
+
+<tr>
+<td class="org-right">102</td>
+<td class="org-left">tar</td>
+<td class="org-left">takes</td>
+</tr>
+
+<tr>
+<td class="org-right">103</td>
+<td class="org-left">tillbaka</td>
+<td class="org-left">back</td>
+</tr>
+
+<tr>
+<td class="org-right">104</td>
+<td class="org-left">hans</td>
+<td class="org-left">his</td>
+</tr>
+
+<tr>
+<td class="org-right">105</td>
+<td class="org-left">över</td>
+<td class="org-left">over</td>
+</tr>
+
+<tr>
+<td class="org-right">106</td>
+<td class="org-left">säger</td>
+<td class="org-left">says</td>
+</tr>
+
+<tr>
+<td class="org-right">107</td>
+<td class="org-left">sen</td>
+<td class="org-left">late</td>
+</tr>
+
+<tr>
+<td class="org-right">108</td>
+<td class="org-left">ge</td>
+<td class="org-left">give</td>
+</tr>
+
+<tr>
+<td class="org-right">109</td>
+<td class="org-left">mer</td>
+<td class="org-left">more</td>
+</tr>
+
+<tr>
+<td class="org-right">110</td>
+<td class="org-left">ditt</td>
+<td class="org-left">your</td>
+</tr>
+
+<tr>
+<td class="org-right">111</td>
+<td class="org-left">gjorde</td>
+<td class="org-left">did</td>
+</tr>
+
+<tr>
+<td class="org-right">112</td>
+<td class="org-left">någon</td>
+<td class="org-left">any</td>
+</tr>
+
+<tr>
+<td class="org-right">113</td>
+<td class="org-left">mina</td>
+<td class="org-left">mine</td>
+</tr>
+
+<tr>
+<td class="org-right">114</td>
+<td class="org-left">ner</td>
+<td class="org-left">down</td>
+</tr>
+
+<tr>
+<td class="org-right">115</td>
+<td class="org-left">åt</td>
+<td class="org-left">at</td>
+</tr>
+
+<tr>
+<td class="org-right">116</td>
+<td class="org-left">fan</td>
+<td class="org-left">Damn</td>
+</tr>
+
+<tr>
+<td class="org-right">117</td>
+<td class="org-left">väl</td>
+<td class="org-left">well</td>
+</tr>
+
+<tr>
+<td class="org-right">118</td>
+<td class="org-left">vänta</td>
+<td class="org-left">wait</td>
+</tr>
+
+<tr>
+<td class="org-right">119</td>
+<td class="org-left">också</td>
+<td class="org-left">also</td>
+</tr>
+
+<tr>
+<td class="org-right">120</td>
+<td class="org-left">fick</td>
+<td class="org-left">got</td>
+</tr>
+
+<tr>
+<td class="org-right">121</td>
+<td class="org-left">nån</td>
+<td class="org-left">eachother</td>
+</tr>
+
+<tr>
+<td class="org-right">122</td>
+<td class="org-left">säga</td>
+<td class="org-left">say</td>
+</tr>
+
+<tr>
+<td class="org-right">123</td>
+<td class="org-left">mr</td>
+<td class="org-left">mr</td>
+</tr>
+
+<tr>
+<td class="org-right">124</td>
+<td class="org-left">år</td>
+<td class="org-left">year</td>
+</tr>
+
+<tr>
+<td class="org-right">125</td>
+<td class="org-left">kunde</td>
+<td class="org-left">could</td>
+</tr>
+
+<tr>
+<td class="org-right">126</td>
+<td class="org-left">låt</td>
+<td class="org-left">let</td>
+</tr>
+
+<tr>
+<td class="org-right">127</td>
+<td class="org-left">varit</td>
+<td class="org-left">been</td>
+</tr>
+
+<tr>
+<td class="org-right">128</td>
+<td class="org-left">detta</td>
+<td class="org-left">this</td>
+</tr>
+
+<tr>
+<td class="org-right">129</td>
+<td class="org-left">hit</td>
+<td class="org-left">here</td>
+</tr>
+
+<tr>
+<td class="org-right">130</td>
+<td class="org-left">nog</td>
+<td class="org-left">probably</td>
+</tr>
+
+<tr>
+<td class="org-right">131</td>
+<td class="org-left">pappa</td>
+<td class="org-left">dad</td>
+</tr>
+
+<tr>
+<td class="org-right">132</td>
+<td class="org-left">andra</td>
+<td class="org-left">Other</td>
+</tr>
+
+<tr>
+<td class="org-right">133</td>
+<td class="org-left">mamma</td>
+<td class="org-left">mother</td>
+</tr>
+
+<tr>
+<td class="org-right">134</td>
+<td class="org-left">hela</td>
+<td class="org-left">whole</td>
+</tr>
+
+<tr>
+<td class="org-right">135</td>
+<td class="org-left">mot</td>
+<td class="org-left">against</td>
+</tr>
+
+<tr>
+<td class="org-right">136</td>
+<td class="org-left">vid</td>
+<td class="org-left">at</td>
+</tr>
+
+<tr>
+<td class="org-right">137</td>
+<td class="org-left">känner</td>
+<td class="org-left">know</td>
+</tr>
+
+<tr>
+<td class="org-right">138</td>
+<td class="org-left">några</td>
+<td class="org-left">a</td>
+</tr>
+
+<tr>
+<td class="org-right">139</td>
+<td class="org-left">komma</td>
+<td class="org-left">come</td>
+</tr>
+
+<tr>
+<td class="org-right">140</td>
+<td class="org-left">rätt</td>
+<td class="org-left">Right</td>
+</tr>
+
+<tr>
+<td class="org-right">141</td>
+<td class="org-left">borde</td>
+<td class="org-left">should</td>
+</tr>
+
+<tr>
+<td class="org-right">142</td>
+<td class="org-left">menar</td>
+<td class="org-left">mean</td>
+</tr>
+
+<tr>
+<td class="org-right">143</td>
+<td class="org-left">själv</td>
+<td class="org-left">self</td>
+</tr>
+
+<tr>
+<td class="org-right">144</td>
+<td class="org-left">va</td>
+<td class="org-left">eh</td>
+</tr>
+
+<tr>
+<td class="org-right">145</td>
+<td class="org-left">alltid</td>
+<td class="org-left">always</td>
+</tr>
+
+<tr>
+<td class="org-right">146</td>
+<td class="org-left">dina</td>
+<td class="org-left">your</td>
+</tr>
+
+<tr>
+<td class="org-right">147</td>
+<td class="org-left">hem</td>
+<td class="org-left">Home</td>
+</tr>
+
+<tr>
+<td class="org-right">148</td>
+<td class="org-left">gjort</td>
+<td class="org-left">done</td>
+</tr>
+
+<tr>
+<td class="org-right">149</td>
+<td class="org-left">ville</td>
+<td class="org-left">wanted</td>
+</tr>
+
+<tr>
+<td class="org-right">150</td>
+<td class="org-left">såg</td>
+<td class="org-left">SAW</td>
+</tr>
+
+<tr>
+<td class="org-right">151</td>
+<td class="org-left">dom</td>
+<td class="org-left">judgment</td>
+</tr>
+
+<tr>
+<td class="org-right">152</td>
+<td class="org-left">verkligen</td>
+<td class="org-left">really</td>
+</tr>
+
+<tr>
+<td class="org-right">153</td>
+<td class="org-left">titta</td>
+<td class="org-left">look</td>
+</tr>
+
+<tr>
+<td class="org-right">154</td>
+<td class="org-left">dag</td>
+<td class="org-left">day</td>
+</tr>
+
+<tr>
+<td class="org-right">155</td>
+<td class="org-left">utan</td>
+<td class="org-left">without</td>
+</tr>
+
+<tr>
+<td class="org-right">156</td>
+<td class="org-left">fel</td>
+<td class="org-left">wrong</td>
+</tr>
+
+<tr>
+<td class="org-right">157</td>
+<td class="org-left">tre</td>
+<td class="org-left">three</td>
+</tr>
+
+<tr>
+<td class="org-right">158</td>
+<td class="org-left">visst</td>
+<td class="org-left">Certainly</td>
+</tr>
+
+<tr>
+<td class="org-right">159</td>
+<td class="org-left">prata</td>
+<td class="org-left">talk</td>
+</tr>
+
+<tr>
+<td class="org-right">160</td>
+<td class="org-left">vår</td>
+<td class="org-left">spring</td>
+</tr>
+
+<tr>
+<td class="org-right">161</td>
+<td class="org-left">liv</td>
+<td class="org-left">life</td>
+</tr>
+
+<tr>
+<td class="org-right">162</td>
+<td class="org-left">förstår</td>
+<td class="org-left">understand</td>
+</tr>
+
+<tr>
+<td class="org-right">163</td>
+<td class="org-left">sätt</td>
+<td class="org-left">way</td>
+</tr>
+
+<tr>
+<td class="org-right">164</td>
+<td class="org-left">tog</td>
+<td class="org-left">took</td>
+</tr>
+
+<tr>
+<td class="org-right">165</td>
+<td class="org-left">älskar</td>
+<td class="org-left">love</td>
+</tr>
+
+<tr>
+<td class="org-right">166</td>
+<td class="org-left">blev</td>
+<td class="org-left">became</td>
+</tr>
+
+<tr>
+<td class="org-right">167</td>
+<td class="org-left">håll</td>
+<td class="org-left">hold</td>
+</tr>
+
+<tr>
+<td class="org-right">168</td>
+<td class="org-left">döda</td>
+<td class="org-left">kill</td>
+</tr>
+
+<tr>
+<td class="org-right">169</td>
+<td class="org-left">tid</td>
+<td class="org-left">time</td>
+</tr>
+
+<tr>
+<td class="org-right">170</td>
+<td class="org-left">tycker</td>
+<td class="org-left">think</td>
+</tr>
+
+<tr>
+<td class="org-right">171</td>
+<td class="org-left">sluta</td>
+<td class="org-left">stop</td>
+</tr>
+
+<tr>
+<td class="org-right">172</td>
+<td class="org-left">trodde</td>
+<td class="org-left">thought</td>
+</tr>
+
+<tr>
+<td class="org-right">173</td>
+<td class="org-left">precis</td>
+<td class="org-left">just</td>
+</tr>
+
+<tr>
+<td class="org-right">174</td>
+<td class="org-left">säg</td>
+<td class="org-left">say</td>
+</tr>
+
+<tr>
+<td class="org-right">175</td>
+<td class="org-left">sir</td>
+<td class="org-left">Sir</td>
+</tr>
+
+<tr>
+<td class="org-right">176</td>
+<td class="org-left">bort</td>
+<td class="org-left">away</td>
+</tr>
+
+<tr>
+<td class="org-right">177</td>
+<td class="org-left">gillar</td>
+<td class="org-left">like</td>
+</tr>
+
+<tr>
+<td class="org-right">178</td>
+<td class="org-left">gång</td>
+<td class="org-left">walk</td>
+</tr>
+
+<tr>
+<td class="org-right">179</td>
+<td class="org-left">inga</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-right">180</td>
+<td class="org-left">gud</td>
+<td class="org-left">God</td>
+</tr>
+
+<tr>
+<td class="org-right">181</td>
+<td class="org-left">sin</td>
+<td class="org-left">its</td>
+</tr>
+
+<tr>
+<td class="org-right">182</td>
+<td class="org-left">tänker</td>
+<td class="org-left">thinking</td>
+</tr>
+
+<tr>
+<td class="org-right">183</td>
+<td class="org-left">hör</td>
+<td class="org-left">hear</td>
+</tr>
+
+<tr>
+<td class="org-right">184</td>
+<td class="org-left">veta</td>
+<td class="org-left">Know</td>
+</tr>
+
+<tr>
+<td class="org-right">185</td>
+<td class="org-left">just</td>
+<td class="org-left">just</td>
+</tr>
+
+<tr>
+<td class="org-right">186</td>
+<td class="org-left">bättre</td>
+<td class="org-left">better</td>
+</tr>
+
+<tr>
+<td class="org-right">187</td>
+<td class="org-left">många</td>
+<td class="org-left">many</td>
+</tr>
+
+<tr>
+<td class="org-right">188</td>
+<td class="org-left">berätta</td>
+<td class="org-left">tell</td>
+</tr>
+
+<tr>
+<td class="org-right">189</td>
+<td class="org-left">gick</td>
+<td class="org-left">went</td>
+</tr>
+
+<tr>
+<td class="org-right">190</td>
+<td class="org-left">barn</td>
+<td class="org-left">children</td>
+</tr>
+
+<tr>
+<td class="org-right">191</td>
+<td class="org-left">hjälp</td>
+<td class="org-left">help</td>
+</tr>
+
+<tr>
+<td class="org-right">192</td>
+<td class="org-left">god</td>
+<td class="org-left">good</td>
+</tr>
+
+<tr>
+<td class="org-right">193</td>
+<td class="org-left">händer</td>
+<td class="org-left">happens</td>
+</tr>
+
+<tr>
+<td class="org-right">194</td>
+<td class="org-left">under</td>
+<td class="org-left">during</td>
+</tr>
+
+<tr>
+<td class="org-right">195</td>
+<td class="org-left">innan</td>
+<td class="org-left">before</td>
+</tr>
+
+<tr>
+<td class="org-right">196</td>
+<td class="org-left">visste</td>
+<td class="org-left">knew</td>
+</tr>
+
+<tr>
+<td class="org-right">197</td>
+<td class="org-left">sett</td>
+<td class="org-left">seen</td>
+</tr>
+
+<tr>
+<td class="org-right">198</td>
+<td class="org-left">helt</td>
+<td class="org-left">completely</td>
+</tr>
+
+<tr>
+<td class="org-right">199</td>
+<td class="org-left">folk</td>
+<td class="org-left">people</td>
+</tr>
+
+<tr>
+<td class="org-right">200</td>
+<td class="org-left">förlåt</td>
+<td class="org-left">sorry</td>
+</tr>
+
+<tr>
+<td class="org-right">201</td>
+<td class="org-left">pengar</td>
+<td class="org-left">money</td>
+</tr>
+
+<tr>
+<td class="org-right">202</td>
+<td class="org-left">död</td>
+<td class="org-left">death</td>
+</tr>
+
+<tr>
+<td class="org-right">203</td>
+<td class="org-left">hjälpa</td>
+<td class="org-left">help</td>
+</tr>
+
+<tr>
+<td class="org-right">204</td>
+<td class="org-left">snälla</td>
+<td class="org-left">please</td>
+</tr>
+
+<tr>
+<td class="org-right">205</td>
+<td class="org-left">första</td>
+<td class="org-left">first</td>
+</tr>
+
+<tr>
+<td class="org-right">206</td>
+<td class="org-left">ursäkta</td>
+<td class="org-left">excuse</td>
+</tr>
+
+<tr>
+<td class="org-right">207</td>
+<td class="org-left">ledsen</td>
+<td class="org-left">sorry</td>
+</tr>
+
+<tr>
+<td class="org-right">208</td>
+<td class="org-left">länge</td>
+<td class="org-left">long</td>
+</tr>
+
+<tr>
+<td class="org-right">209</td>
+<td class="org-left">jävla</td>
+<td class="org-left">fucking</td>
+</tr>
+
+<tr>
+<td class="org-right">210</td>
+<td class="org-left">vart</td>
+<td class="org-left">where</td>
+</tr>
+
+<tr>
+<td class="org-right">211</td>
+<td class="org-left">heter</td>
+<td class="org-left">called</td>
+</tr>
+
+<tr>
+<td class="org-right">212</td>
+<td class="org-left">helvete</td>
+<td class="org-left">hell</td>
+</tr>
+
+<tr>
+<td class="org-right">213</td>
+<td class="org-left">stanna</td>
+<td class="org-left">stay</td>
+</tr>
+
+<tr>
+<td class="org-right">214</td>
+<td class="org-left">hennes</td>
+<td class="org-left">her</td>
+</tr>
+
+<tr>
+<td class="org-right">215</td>
+<td class="org-left">vilken</td>
+<td class="org-left">which</td>
+</tr>
+
+<tr>
+<td class="org-right">216</td>
+<td class="org-left">står</td>
+<td class="org-left">stands</td>
+</tr>
+
+<tr>
+<td class="org-right">217</td>
+<td class="org-left">saker</td>
+<td class="org-left">things</td>
+</tr>
+
+<tr>
+<td class="org-right">218</td>
+<td class="org-left">hallå</td>
+<td class="org-left">Hello</td>
+</tr>
+
+<tr>
+<td class="org-right">219</td>
+<td class="org-left">fortfarande</td>
+<td class="org-left">still</td>
+</tr>
+
+<tr>
+<td class="org-right">220</td>
+<td class="org-left">borta</td>
+<td class="org-left">away</td>
+</tr>
+
+<tr>
+<td class="org-right">221</td>
+<td class="org-left">håller</td>
+<td class="org-left">holding</td>
+</tr>
+
+<tr>
+<td class="org-right">222</td>
+<td class="org-left">far</td>
+<td class="org-left">Father</td>
+</tr>
+
+<tr>
+<td class="org-right">223</td>
+<td class="org-left">åh</td>
+<td class="org-left">Oh</td>
+</tr>
+
+<tr>
+<td class="org-right">224</td>
+<td class="org-left">hand</td>
+<td class="org-left">hand</td>
+</tr>
+
+<tr>
+<td class="org-right">225</td>
+<td class="org-left">ur</td>
+<td class="org-left">from</td>
+</tr>
+
+<tr>
+<td class="org-right">226</td>
+<td class="org-left">sak</td>
+<td class="org-left">Thing</td>
+</tr>
+
+<tr>
+<td class="org-right">227</td>
+<td class="org-left">ger</td>
+<td class="org-left">gives</td>
+</tr>
+
+<tr>
+<td class="org-right">228</td>
+<td class="org-left">problem</td>
+<td class="org-left">problem</td>
+</tr>
+
+<tr>
+<td class="org-right">229</td>
+<td class="org-left">morgon</td>
+<td class="org-left">morning</td>
+</tr>
+
+<tr>
+<td class="org-right">230</td>
+<td class="org-left">ens</td>
+<td class="org-left">even</td>
+</tr>
+
+<tr>
+<td class="org-right">231</td>
+<td class="org-left">kör</td>
+<td class="org-left">drive</td>
+</tr>
+
+<tr>
+<td class="org-right">232</td>
+<td class="org-left">vän</td>
+<td class="org-left">Friend</td>
+</tr>
+
+<tr>
+<td class="org-right">233</td>
+<td class="org-left">våra</td>
+<td class="org-left">our</td>
+</tr>
+
+<tr>
+<td class="org-right">234</td>
+<td class="org-left">väg</td>
+<td class="org-left">way</td>
+</tr>
+
+<tr>
+<td class="org-right">235</td>
+<td class="org-left">enda</td>
+<td class="org-left">only</td>
+</tr>
+
+<tr>
+<td class="org-right">236</td>
+<td class="org-left">kvar</td>
+<td class="org-left">left</td>
+</tr>
+
+<tr>
+<td class="org-right">237</td>
+<td class="org-left">hitta</td>
+<td class="org-left">find</td>
+</tr>
+
+<tr>
+<td class="org-right">238</td>
+<td class="org-left">mår</td>
+<td class="org-left">feel</td>
+</tr>
+
+<tr>
+<td class="org-right">239</td>
+<td class="org-left">samma</td>
+<td class="org-left">same</td>
+</tr>
+
+<tr>
+<td class="org-right">240</td>
+<td class="org-left">vägen</td>
+<td class="org-left">way</td>
+</tr>
+
+<tr>
+<td class="org-right">241</td>
+<td class="org-left">namn</td>
+<td class="org-left">name</td>
+</tr>
+
+<tr>
+<td class="org-right">242</td>
+<td class="org-left">kväll</td>
+<td class="org-left">Evening</td>
+</tr>
+
+<tr>
+<td class="org-right">243</td>
+<td class="org-left">försöker</td>
+<td class="org-left">trying</td>
+</tr>
+
+<tr>
+<td class="org-right">244</td>
+<td class="org-left">ute</td>
+<td class="org-left">out</td>
+</tr>
+
+<tr>
+<td class="org-right">245</td>
+<td class="org-left">dit</td>
+<td class="org-left">there</td>
+</tr>
+
+<tr>
+<td class="org-right">246</td>
+<td class="org-left">ingenting</td>
+<td class="org-left">nothing</td>
+</tr>
+
+<tr>
+<td class="org-right">247</td>
+<td class="org-left">annan</td>
+<td class="org-left">Other</td>
+</tr>
+
+<tr>
+<td class="org-right">248</td>
+<td class="org-left">fått</td>
+<td class="org-left">got</td>
+</tr>
+
+<tr>
+<td class="org-right">249</td>
+<td class="org-left">väldigt</td>
+<td class="org-left">very</td>
+</tr>
+
+<tr>
+<td class="org-right">250</td>
+<td class="org-left">snart</td>
+<td class="org-left">soon</td>
+</tr>
+
+<tr>
+<td class="org-right">251</td>
+<td class="org-left">längre</td>
+<td class="org-left">longer</td>
+</tr>
+
+<tr>
+<td class="org-right">252</td>
+<td class="org-left">sitt</td>
+<td class="org-left">his</td>
+</tr>
+
+<tr>
+<td class="org-right">253</td>
+<td class="org-left">sedan</td>
+<td class="org-left">since</td>
+</tr>
+
+<tr>
+<td class="org-right">254</td>
+<td class="org-left">redan</td>
+<td class="org-left">already</td>
+</tr>
+
+<tr>
+<td class="org-right">255</td>
+<td class="org-left">hände</td>
+<td class="org-left">happened</td>
+</tr>
+
+<tr>
+<td class="org-right">256</td>
+<td class="org-left">fru</td>
+<td class="org-left">wife</td>
+</tr>
+
+<tr>
+<td class="org-right">257</td>
+<td class="org-left">pratar</td>
+<td class="org-left">talking</td>
+</tr>
+
+<tr>
+<td class="org-right">258</td>
+<td class="org-left">bästa</td>
+<td class="org-left">top</td>
+</tr>
+
+<tr>
+<td class="org-right">259</td>
+<td class="org-left">kolla</td>
+<td class="org-left">check</td>
+</tr>
+
+<tr>
+<td class="org-right">260</td>
+<td class="org-left">härifrån</td>
+<td class="org-left">from</td>
+</tr>
+
+<tr>
+<td class="org-right">261</td>
+<td class="org-left">tiden</td>
+<td class="org-left">time</td>
+</tr>
+
+<tr>
+<td class="org-right">262</td>
+<td class="org-left">tro</td>
+<td class="org-left">believe</td>
+</tr>
+
+<tr>
+<td class="org-right">263</td>
+<td class="org-left">e</td>
+<td class="org-left">e</td>
+</tr>
+
+<tr>
+<td class="org-right">264</td>
+<td class="org-left">visa</td>
+<td class="org-left">show</td>
+</tr>
+
+<tr>
+<td class="org-right">265</td>
+<td class="org-left">herregud</td>
+<td class="org-left">Oh</td>
+</tr>
+
+<tr>
+<td class="org-right">266</td>
+<td class="org-left">slut</td>
+<td class="org-left">final</td>
+</tr>
+
+<tr>
+<td class="org-right">267</td>
+<td class="org-left">skit</td>
+<td class="org-left">crap</td>
+</tr>
+
+<tr>
+<td class="org-right">268</td>
+<td class="org-left">fråga</td>
+<td class="org-left">question</td>
+</tr>
+
+<tr>
+<td class="org-right">269</td>
+<td class="org-left">låter</td>
+<td class="org-left">allows</td>
+</tr>
+
+<tr>
+<td class="org-right">270</td>
+<td class="org-left">stor</td>
+<td class="org-left">Big</td>
+</tr>
+
+<tr>
+<td class="org-right">271</td>
+<td class="org-left">varje</td>
+<td class="org-left">each</td>
+</tr>
+
+<tr>
+<td class="org-right">272</td>
+<td class="org-left">jo</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-right">273</td>
+<td class="org-left">träffa</td>
+<td class="org-left">meet</td>
+</tr>
+
+<tr>
+<td class="org-right">274</td>
+<td class="org-left">fram</td>
+<td class="org-left">front</td>
+</tr>
+
+<tr>
+<td class="org-right">275</td>
+<td class="org-left">era</td>
+<td class="org-left">era</td>
+</tr>
+
+<tr>
+<td class="org-right">276</td>
+<td class="org-left">först</td>
+<td class="org-left">first</td>
+</tr>
+
+<tr>
+<td class="org-right">277</td>
+<td class="org-left">deras</td>
+<td class="org-left">their</td>
+</tr>
+
+<tr>
+<td class="org-right">278</td>
+<td class="org-left">säkert</td>
+<td class="org-left">surely</td>
+</tr>
+
+<tr>
+<td class="org-right">279</td>
+<td class="org-left">åka</td>
+<td class="org-left">go</td>
+</tr>
+
+<tr>
+<td class="org-right">280</td>
+<td class="org-left">rädd</td>
+<td class="org-left">afraid</td>
+</tr>
+
+<tr>
+<td class="org-right">281</td>
+<td class="org-left">därför</td>
+<td class="org-left">therefore</td>
+</tr>
+
+<tr>
+<td class="org-right">282</td>
+<td class="org-left">lämna</td>
+<td class="org-left">leave</td>
+</tr>
+
+<tr>
+<td class="org-right">283</td>
+<td class="org-left">börjar</td>
+<td class="org-left">begins</td>
+</tr>
+
+<tr>
+<td class="org-right">284</td>
+<td class="org-left">jobb</td>
+<td class="org-left">Job</td>
+</tr>
+
+<tr>
+<td class="org-right">285</td>
+<td class="org-left">säker</td>
+<td class="org-left">sure</td>
+</tr>
+
+<tr>
+<td class="org-right">286</td>
+<td class="org-left">hos</td>
+<td class="org-left">at</td>
+</tr>
+
+<tr>
+<td class="org-right">287</td>
+<td class="org-left">fem</td>
+<td class="org-left">five</td>
+</tr>
+
+<tr>
+<td class="org-right">288</td>
+<td class="org-left">genom</td>
+<td class="org-left">through</td>
+</tr>
+
+<tr>
+<td class="org-right">289</td>
+<td class="org-left">tänkte</td>
+<td class="org-left">figured</td>
+</tr>
+
+<tr>
+<td class="org-right">290</td>
+<td class="org-left">liten</td>
+<td class="org-left">small</td>
+</tr>
+
+<tr>
+<td class="org-right">291</td>
+<td class="org-left">hoppas</td>
+<td class="org-left">hope</td>
+</tr>
+
+<tr>
+<td class="org-right">292</td>
+<td class="org-left">kunna</td>
+<td class="org-left">be</td>
+</tr>
+
+<tr>
+<td class="org-right">293</td>
+<td class="org-left">lyssna</td>
+<td class="org-left">listen</td>
+</tr>
+
+<tr>
+<td class="org-right">294</td>
+<td class="org-left">hörde</td>
+<td class="org-left">heard</td>
+</tr>
+
+<tr>
+<td class="org-right">295</td>
+<td class="org-left">nästa</td>
+<td class="org-left">Next</td>
+</tr>
+
+<tr>
+<td class="org-right">296</td>
+<td class="org-left">sex</td>
+<td class="org-left">six</td>
+</tr>
+
+<tr>
+<td class="org-right">297</td>
+<td class="org-left">ses</td>
+<td class="org-left">be</td>
+</tr>
+
+<tr>
+<td class="org-right">298</td>
+<td class="org-left">son</td>
+<td class="org-left">son</td>
+</tr>
+
+<tr>
+<td class="org-right">299</td>
+<td class="org-left">verkar</td>
+<td class="org-left">seems</td>
+</tr>
+
+<tr>
+<td class="org-right">300</td>
+<td class="org-left">livet</td>
+<td class="org-left">life</td>
+</tr>
+
+<tr>
+<td class="org-right">301</td>
+<td class="org-left">dollar</td>
+<td class="org-left">dollar</td>
+</tr>
+
+<tr>
+<td class="org-right">302</td>
+<td class="org-left">vänner</td>
+<td class="org-left">friends</td>
+</tr>
+
+<tr>
+<td class="org-right">303</td>
+<td class="org-left">sista</td>
+<td class="org-left">last</td>
+</tr>
+
+<tr>
+<td class="org-right">304</td>
+<td class="org-left">bilen</td>
+<td class="org-left">car</td>
+</tr>
+
+<tr>
+<td class="org-right">305</td>
+<td class="org-left">hålla</td>
+<td class="org-left">keep</td>
+</tr>
+
+<tr>
+<td class="org-right">306</td>
+<td class="org-left">tala</td>
+<td class="org-left">speak</td>
+</tr>
+
+<tr>
+<td class="org-right">307</td>
+<td class="org-left">tag</td>
+<td class="org-left">while</td>
+</tr>
+
+<tr>
+<td class="org-right">308</td>
+<td class="org-left">annat</td>
+<td class="org-left">Other</td>
+</tr>
+
+<tr>
+<td class="org-right">309</td>
+<td class="org-left">riktigt</td>
+<td class="org-left">really</td>
+</tr>
+
+<tr>
+<td class="org-right">310</td>
+<td class="org-left">dö</td>
+<td class="org-left">die</td>
+</tr>
+
+<tr>
+<td class="org-right">311</td>
+<td class="org-left">sant</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-right">312</td>
+<td class="org-left">klarar</td>
+<td class="org-left">pass</td>
+</tr>
+
+<tr>
+<td class="org-right">313</td>
+<td class="org-left">gav</td>
+<td class="org-left">gave</td>
+</tr>
+
+<tr>
+<td class="org-right">314</td>
+<td class="org-left">sina</td>
+<td class="org-left">their</td>
+</tr>
+
+<tr>
+<td class="org-right">315</td>
+<td class="org-left">män</td>
+<td class="org-left">men</td>
+</tr>
+
+<tr>
+<td class="org-right">316</td>
+<td class="org-left">dra</td>
+<td class="org-left">drag</td>
+</tr>
+
+<tr>
+<td class="org-right">317</td>
+<td class="org-left">denna</td>
+<td class="org-left">this</td>
+</tr>
+
+<tr>
+<td class="org-right">318</td>
+<td class="org-left">vilket</td>
+<td class="org-left">which</td>
+</tr>
+
+<tr>
+<td class="org-right">319</td>
+<td class="org-left">ihop</td>
+<td class="org-left">Together</td>
+</tr>
+
+<tr>
+<td class="org-right">320</td>
+<td class="org-left">väntar</td>
+<td class="org-left">waiting</td>
+</tr>
+
+<tr>
+<td class="org-right">321</td>
+<td class="org-left">världen</td>
+<td class="org-left">world</td>
+</tr>
+
+<tr>
+<td class="org-right">322</td>
+<td class="org-left">minuter</td>
+<td class="org-left">minutes</td>
+</tr>
+
+<tr>
+<td class="org-right">323</td>
+<td class="org-left">nya</td>
+<td class="org-left">new</td>
+</tr>
+
+<tr>
+<td class="org-right">324</td>
+<td class="org-left">älskling</td>
+<td class="org-left">Darling</td>
+</tr>
+
+<tr>
+<td class="org-right">325</td>
+<td class="org-left">människor</td>
+<td class="org-left">people</td>
+</tr>
+
+<tr>
+<td class="org-right">326</td>
+<td class="org-left">höra</td>
+<td class="org-left">hear</td>
+</tr>
+
+<tr>
+<td class="org-right">327</td>
+<td class="org-left">idag</td>
+<td class="org-left">today</td>
+</tr>
+
+<tr>
+<td class="org-right">328</td>
+<td class="org-left">ligger</td>
+<td class="org-left">is</td>
+</tr>
+
+<tr>
+<td class="org-right">329</td>
+<td class="org-left">tills</td>
+<td class="org-left">until</td>
+</tr>
+
+<tr>
+<td class="org-right">330</td>
+<td class="org-left">blivit</td>
+<td class="org-left">been</td>
+</tr>
+
+<tr>
+<td class="org-right">331</td>
+<td class="org-left">lägg</td>
+<td class="org-left">add</td>
+</tr>
+
+<tr>
+<td class="org-right">332</td>
+<td class="org-left">klart</td>
+<td class="org-left">clear</td>
+</tr>
+
+<tr>
+<td class="org-right">333</td>
+<td class="org-left">åker</td>
+<td class="org-left">go</td>
+</tr>
+
+<tr>
+<td class="org-right">334</td>
+<td class="org-left">fyra</td>
+<td class="org-left">four</td>
+</tr>
+
+<tr>
+<td class="org-right">335</td>
+<td class="org-left">hemma</td>
+<td class="org-left">home</td>
+</tr>
+
+<tr>
+<td class="org-right">336</td>
+<td class="org-left">betyder</td>
+<td class="org-left">mean</td>
+</tr>
+
+<tr>
+<td class="org-right">337</td>
+<td class="org-left">fast</td>
+<td class="org-left">solid</td>
+</tr>
+
+<tr>
+<td class="org-right">338</td>
+<td class="org-left">lugnt</td>
+<td class="org-left">calmly</td>
+</tr>
+
+<tr>
+<td class="org-right">339</td>
+<td class="org-left">del</td>
+<td class="org-left">part</td>
+</tr>
+
+<tr>
+<td class="org-right">340</td>
+<td class="org-left">helst</td>
+<td class="org-left">preferably</td>
+</tr>
+
+<tr>
+<td class="org-right">341</td>
+<td class="org-left">runt</td>
+<td class="org-left">around</td>
+</tr>
+
+<tr>
+<td class="org-right">342</td>
+<td class="org-left">hämta</td>
+<td class="org-left">retrieve</td>
+</tr>
+
+<tr>
+<td class="org-right">343</td>
+<td class="org-left">sagt</td>
+<td class="org-left">said</td>
+</tr>
+
+<tr>
+<td class="org-right">344</td>
+<td class="org-left">rör</td>
+<td class="org-left">pipe</td>
+</tr>
+
+<tr>
+<td class="org-right">345</td>
+<td class="org-left">stora</td>
+<td class="org-left">large</td>
+</tr>
+
+<tr>
+<td class="org-right">346</td>
+<td class="org-left">vårt</td>
+<td class="org-left">our</td>
+</tr>
+
+<tr>
+<td class="org-right">347</td>
+<td class="org-left">minns</td>
+<td class="org-left">remember</td>
+</tr>
+
+<tr>
+<td class="org-right">348</td>
+<td class="org-left">tänk</td>
+<td class="org-left">think</td>
+</tr>
+
+<tr>
+<td class="org-right">349</td>
+<td class="org-left">inne</td>
+<td class="org-left">in</td>
+</tr>
+
+<tr>
+<td class="org-right">350</td>
+<td class="org-left">lilla</td>
+<td class="org-left">small</td>
+</tr>
+
+<tr>
+<td class="org-right">351</td>
+<td class="org-left">annars</td>
+<td class="org-left">otherwise</td>
+</tr>
+
+<tr>
+<td class="org-right">352</td>
+<td class="org-left">öppna</td>
+<td class="org-left">Open</td>
+</tr>
+
+<tr>
+<td class="org-right">353</td>
+<td class="org-left">även</td>
+<td class="org-left">also</td>
+</tr>
+
+<tr>
+<td class="org-right">354</td>
+<td class="org-left">polisen</td>
+<td class="org-left">police</td>
+</tr>
+
+<tr>
+<td class="org-right">355</td>
+<td class="org-left">ihåg</td>
+<td class="org-left">remember</td>
+</tr>
+
+<tr>
+<td class="org-right">356</td>
+<td class="org-left">ok</td>
+<td class="org-left">OK</td>
+</tr>
+
+<tr>
+<td class="org-right">357</td>
+<td class="org-left">tur</td>
+<td class="org-left">lucky</td>
+</tr>
+
+<tr>
+<td class="org-right">358</td>
+<td class="org-left">haft</td>
+<td class="org-left">had</td>
+</tr>
+
+<tr>
+<td class="org-right">359</td>
+<td class="org-left">hittade</td>
+<td class="org-left">found</td>
+</tr>
+
+<tr>
+<td class="org-right">360</td>
+<td class="org-left">kvinna</td>
+<td class="org-left">woman</td>
+</tr>
+
+<tr>
+<td class="org-right">361</td>
+<td class="org-left">lika</td>
+<td class="org-left">equal</td>
+</tr>
+
+<tr>
+<td class="org-right">362</td>
+<td class="org-left">spelar</td>
+<td class="org-left">play</td>
+</tr>
+
+<tr>
+<td class="org-right">363</td>
+<td class="org-left">illa</td>
+<td class="org-left">badly</td>
+</tr>
+
+<tr>
+<td class="org-right">364</td>
+<td class="org-left">ändå</td>
+<td class="org-left">still</td>
+</tr>
+
+<tr>
+<td class="org-right">365</td>
+<td class="org-left">ensam</td>
+<td class="org-left">alone</td>
+</tr>
+
+<tr>
+<td class="org-right">366</td>
+<td class="org-left">hört</td>
+<td class="org-left">heard</td>
+</tr>
+
+<tr>
+<td class="org-right">367</td>
+<td class="org-left">släpp</td>
+<td class="org-left">release</td>
+</tr>
+
+<tr>
+<td class="org-right">368</td>
+<td class="org-left">fall</td>
+<td class="org-left">case</td>
+</tr>
+
+<tr>
+<td class="org-right">369</td>
+<td class="org-left">sånt</td>
+<td class="org-left">stuff</td>
+</tr>
+
+<tr>
+<td class="org-right">370</td>
+<td class="org-left">gången</td>
+<td class="org-left">time</td>
+</tr>
+
+<tr>
+<td class="org-right">371</td>
+<td class="org-left">bil</td>
+<td class="org-left">car</td>
+</tr>
+
+<tr>
+<td class="org-right">372</td>
+<td class="org-left">nästan</td>
+<td class="org-left">almost</td>
+</tr>
+
+<tr>
+<td class="org-right">373</td>
+<td class="org-left">faktiskt</td>
+<td class="org-left">actually</td>
+</tr>
+
+<tr>
+<td class="org-right">374</td>
+<td class="org-left">natt</td>
+<td class="org-left">night</td>
+</tr>
+
+<tr>
+<td class="org-right">375</td>
+<td class="org-left">ifrån</td>
+<td class="org-left">from</td>
+</tr>
+
+<tr>
+<td class="org-right">376</td>
+<td class="org-left">slå</td>
+<td class="org-left">beat</td>
+</tr>
+
+<tr>
+<td class="org-right">377</td>
+<td class="org-left">långt</td>
+<td class="org-left">far</td>
+</tr>
+
+<tr>
+<td class="org-right">378</td>
+<td class="org-left">ny</td>
+<td class="org-left">new</td>
+</tr>
+
+<tr>
+<td class="org-right">379</td>
+<td class="org-left">pengarna</td>
+<td class="org-left">the</td>
+</tr>
+
+<tr>
+<td class="org-right">380</td>
+<td class="org-left">senare</td>
+<td class="org-left">later</td>
+</tr>
+
+<tr>
+<td class="org-right">381</td>
+<td class="org-left">kul</td>
+<td class="org-left">fun</td>
+</tr>
+
+<tr>
+<td class="org-right">382</td>
+<td class="org-left">killen</td>
+<td class="org-left">guy</td>
+</tr>
+
+<tr>
+<td class="org-right">383</td>
+<td class="org-left">dog</td>
+<td class="org-left">died</td>
+</tr>
+
+<tr>
+<td class="org-right">384</td>
+<td class="org-left">börja</td>
+<td class="org-left">start</td>
+</tr>
+
+<tr>
+<td class="org-right">385</td>
+<td class="org-left">bäst</td>
+<td class="org-left">best</td>
+</tr>
+
+<tr>
+<td class="org-right">386</td>
+<td class="org-left">fort</td>
+<td class="org-left">fast</td>
+</tr>
+
+<tr>
+<td class="org-right">387</td>
+<td class="org-left">spela</td>
+<td class="org-left">play</td>
+</tr>
+
+<tr>
+<td class="org-right">388</td>
+<td class="org-left">emot</td>
+<td class="org-left">against</td>
+</tr>
+
+<tr>
+<td class="org-right">389</td>
+<td class="org-left">heller</td>
+<td class="org-left">either</td>
+</tr>
+
+<tr>
+<td class="org-right">390</td>
+<td class="org-left">be</td>
+<td class="org-left">ask</td>
+</tr>
+
+<tr>
+<td class="org-right">391</td>
+<td class="org-left">tillsammans</td>
+<td class="org-left">together</td>
+</tr>
+
+<tr>
+<td class="org-right">392</td>
+<td class="org-left">huset</td>
+<td class="org-left">house</td>
+</tr>
+
+<tr>
+<td class="org-right">393</td>
+<td class="org-left">hus</td>
+<td class="org-left">House</td>
+</tr>
+
+<tr>
+<td class="org-right">394</td>
+<td class="org-left">gott</td>
+<td class="org-left">good</td>
+</tr>
+
+<tr>
+<td class="org-right">395</td>
+<td class="org-left">kille</td>
+<td class="org-left">boy</td>
+</tr>
+
+<tr>
+<td class="org-right">396</td>
+<td class="org-left">plats</td>
+<td class="org-left">place</td>
+</tr>
+
+<tr>
+<td class="org-right">397</td>
+<td class="org-left">vilja</td>
+<td class="org-left">will</td>
+</tr>
+
+<tr>
+<td class="org-right">398</td>
+<td class="org-left">trevligt</td>
+<td class="org-left">nice</td>
+</tr>
+
+<tr>
+<td class="org-right">399</td>
+<td class="org-left">ringer</td>
+<td class="org-left">call</td>
+</tr>
+
+<tr>
+<td class="org-right">400</td>
+<td class="org-left">hittar</td>
+<td class="org-left">find</td>
+</tr>
+
+<tr>
+<td class="org-right">401</td>
+<td class="org-left">dr</td>
+<td class="org-left">dr</td>
+</tr>
+
+<tr>
+<td class="org-right">402</td>
+<td class="org-left">familj</td>
+<td class="org-left">family</td>
+</tr>
+
+<tr>
+<td class="org-right">403</td>
+<td class="org-left">klara</td>
+<td class="org-left">done</td>
+</tr>
+
+<tr>
+<td class="org-right">404</td>
+<td class="org-left">redo</td>
+<td class="org-left">ready</td>
+</tr>
+
+<tr>
+<td class="org-right">405</td>
+<td class="org-left">hänt</td>
+<td class="org-left">happened</td>
+</tr>
+
+<tr>
+<td class="org-right">406</td>
+<td class="org-left">vilka</td>
+<td class="org-left">which</td>
+</tr>
+
+<tr>
+<td class="org-right">407</td>
+<td class="org-left">pa</td>
+<td class="org-left">PA</td>
+</tr>
+
+<tr>
+<td class="org-right">408</td>
+<td class="org-left">tio</td>
+<td class="org-left">ten</td>
+</tr>
+
+<tr>
+<td class="org-right">409</td>
+<td class="org-left">sitter</td>
+<td class="org-left">seated</td>
+</tr>
+
+<tr>
+<td class="org-right">410</td>
+<td class="org-left">bor</td>
+<td class="org-left">live</td>
+</tr>
+
+<tr>
+<td class="org-right">411</td>
+<td class="org-left">jobbar</td>
+<td class="org-left">work</td>
+</tr>
+
+<tr>
+<td class="org-right">412</td>
+<td class="org-left">dödade</td>
+<td class="org-left">killed</td>
+</tr>
+
+<tr>
+<td class="org-right">413</td>
+<td class="org-left">dörren</td>
+<td class="org-left">door</td>
+</tr>
+
+<tr>
+<td class="org-right">414</td>
+<td class="org-left">glad</td>
+<td class="org-left">Happy</td>
+</tr>
+
+<tr>
+<td class="org-right">415</td>
+<td class="org-left">äta</td>
+<td class="org-left">eat</td>
+</tr>
+
+<tr>
+<td class="org-right">416</td>
+<td class="org-left">stan</td>
+<td class="org-left">town</td>
+</tr>
+
+<tr>
+<td class="org-right">417</td>
+<td class="org-left">gammal</td>
+<td class="org-left">old</td>
+</tr>
+
+<tr>
+<td class="org-right">418</td>
+<td class="org-left">fattar</td>
+<td class="org-left">make</td>
+</tr>
+
+<tr>
+<td class="org-right">419</td>
+<td class="org-left">tyst</td>
+<td class="org-left">silent</td>
+</tr>
+
+<tr>
+<td class="org-right">420</td>
+<td class="org-left">båda</td>
+<td class="org-left">both</td>
+</tr>
+
+<tr>
+<td class="org-right">421</td>
+<td class="org-left">chans</td>
+<td class="org-left">chance</td>
+</tr>
+
+<tr>
+<td class="org-right">422</td>
+<td class="org-left">mannen</td>
+<td class="org-left">art</td>
+</tr>
+
+<tr>
+<td class="org-right">423</td>
+<td class="org-left">dessa</td>
+<td class="org-left">these</td>
+</tr>
+
+<tr>
+<td class="org-right">424</td>
+<td class="org-left">försökte</td>
+<td class="org-left">tried</td>
+</tr>
+
+<tr>
+<td class="org-right">425</td>
+<td class="org-left">rum</td>
+<td class="org-left">room</td>
+</tr>
+
+<tr>
+<td class="org-right">426</td>
+<td class="org-left">tänka</td>
+<td class="org-left">think</td>
+</tr>
+
+<tr>
+<td class="org-right">427</td>
+<td class="org-left">gamla</td>
+<td class="org-left">old</td>
+</tr>
+
+<tr>
+<td class="org-right">428</td>
+<td class="org-left">känns</td>
+<td class="org-left">feels</td>
+</tr>
+
+<tr>
+<td class="org-right">429</td>
+<td class="org-left">ert</td>
+<td class="org-left">your</td>
+</tr>
+
+<tr>
+<td class="org-right">430</td>
+<td class="org-left">nära</td>
+<td class="org-left">close</td>
+</tr>
+
+<tr>
+<td class="org-right">431</td>
+<td class="org-left">gått</td>
+<td class="org-left">gone</td>
+</tr>
+
+<tr>
+<td class="org-right">432</td>
+<td class="org-left">vore</td>
+<td class="org-left">would</td>
+</tr>
+
+<tr>
+<td class="org-right">433</td>
+<td class="org-left">klockan</td>
+<td class="org-left">bell</td>
+</tr>
+
+<tr>
+<td class="org-right">434</td>
+<td class="org-left">par</td>
+<td class="org-left">couple</td>
+</tr>
+
+<tr>
+<td class="org-right">435</td>
+<td class="org-left">lever</td>
+<td class="org-left">liver</td>
+</tr>
+
+<tr>
+<td class="org-right">436</td>
+<td class="org-left">svårt</td>
+<td class="org-left">difficult</td>
+</tr>
+
+<tr>
+<td class="org-right">437</td>
+<td class="org-left">ord</td>
+<td class="org-left">words</td>
+</tr>
+
+<tr>
+<td class="org-right">438</td>
+<td class="org-left">dagar</td>
+<td class="org-left">days</td>
+</tr>
+
+<tr>
+<td class="org-right">439</td>
+<td class="org-left">iväg</td>
+<td class="org-left">away</td>
+</tr>
+
+<tr>
+<td class="org-right">440</td>
+<td class="org-left">ännu</td>
+<td class="org-left">yet</td>
+</tr>
+
+<tr>
+<td class="org-right">441</td>
+<td class="org-left">all</td>
+<td class="org-left">all</td>
+</tr>
+
+<tr>
+<td class="org-right">442</td>
+<td class="org-left">bryr</td>
+<td class="org-left">care</td>
+</tr>
+
+<tr>
+<td class="org-right">443</td>
+<td class="org-left">ber</td>
+<td class="org-left">asks</td>
+</tr>
+
+<tr>
+<td class="org-right">444</td>
+<td class="org-left">kommit</td>
+<td class="org-left">come</td>
+</tr>
+
+<tr>
+<td class="org-right">445</td>
+<td class="org-left">ibland</td>
+<td class="org-left">sometimes</td>
+</tr>
+
+<tr>
+<td class="org-right">446</td>
+<td class="org-left">bror</td>
+<td class="org-left">Brother</td>
+</tr>
+
+<tr>
+<td class="org-right">447</td>
+<td class="org-left">gärna</td>
+<td class="org-left">gladly</td>
+</tr>
+
+<tr>
+<td class="org-right">448</td>
+<td class="org-left">klar</td>
+<td class="org-left">clear</td>
+</tr>
+
+<tr>
+<td class="org-right">449</td>
+<td class="org-left">gånger</td>
+<td class="org-left">times</td>
+</tr>
+
+<tr>
+<td class="org-right">450</td>
+<td class="org-left">mrs</td>
+<td class="org-left">Mrs.</td>
+</tr>
+
+<tr>
+<td class="org-right">451</td>
+<td class="org-left">låta</td>
+<td class="org-left">sound</td>
+</tr>
+
+<tr>
+<td class="org-right">452</td>
+<td class="org-left">mor</td>
+<td class="org-left">mother</td>
+</tr>
+
+<tr>
+<td class="org-right">453</td>
+<td class="org-left">rädda</td>
+<td class="org-left">save</td>
+</tr>
+
+<tr>
+<td class="org-right">454</td>
+<td class="org-left">a</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-right">455</td>
+<td class="org-left">galen</td>
+<td class="org-left">crazy</td>
+</tr>
+
+<tr>
+<td class="org-right">456</td>
+<td class="org-left">oroa</td>
+<td class="org-left">worry</td>
+</tr>
+
+<tr>
+<td class="org-right">457</td>
+<td class="org-left">fint</td>
+<td class="org-left">fine</td>
+</tr>
+
+<tr>
+<td class="org-right">458</td>
+<td class="org-left">dags</td>
+<td class="org-left">time</td>
+</tr>
+
+<tr>
+<td class="org-right">459</td>
+<td class="org-left">timmar</td>
+<td class="org-left">hours</td>
+</tr>
+
+<tr>
+<td class="org-right">460</td>
+<td class="org-left">bakom</td>
+<td class="org-left">behind</td>
+</tr>
+
+<tr>
+<td class="org-right">461</td>
+<td class="org-left">ringa</td>
+<td class="org-left">call</td>
+</tr>
+
+<tr>
+<td class="org-right">462</td>
+<td class="org-left">dör</td>
+<td class="org-left">dies</td>
+</tr>
+
+<tr>
+<td class="org-right">463</td>
+<td class="org-left">mellan</td>
+<td class="org-left">between</td>
+</tr>
+
+<tr>
+<td class="org-right">464</td>
+<td class="org-left">kapten</td>
+<td class="org-left">captain</td>
+</tr>
+
+<tr>
+<td class="org-right">465</td>
+<td class="org-left">sån</td>
+<td class="org-left">such</td>
+</tr>
+
+<tr>
+<td class="org-right">466</td>
+<td class="org-left">skynda</td>
+<td class="org-left">hurry</td>
+</tr>
+
+<tr>
+<td class="org-right">467</td>
+<td class="org-left">fler</td>
+<td class="org-left">more</td>
+</tr>
+
+<tr>
+<td class="org-right">468</td>
+<td class="org-left">killar</td>
+<td class="org-left">guys</td>
+</tr>
+
+<tr>
+<td class="org-right">469</td>
+<td class="org-left">l</td>
+<td class="org-left">l</td>
+</tr>
+
+<tr>
+<td class="org-right">470</td>
+<td class="org-left">mat</td>
+<td class="org-left">food</td>
+</tr>
+
+<tr>
+<td class="org-right">471</td>
+<td class="org-left">john</td>
+<td class="org-left">john</td>
+</tr>
+
+<tr>
+<td class="org-right">472</td>
+<td class="org-left">stannar</td>
+<td class="org-left">stop</td>
+</tr>
+
+<tr>
+<td class="org-right">473</td>
+<td class="org-left">alls</td>
+<td class="org-left">at</td>
+</tr>
+
+<tr>
+<td class="org-right">474</td>
+<td class="org-left">vapen</td>
+<td class="org-left">arms</td>
+</tr>
+
+<tr>
+<td class="org-right">475</td>
+<td class="org-left">känna</td>
+<td class="org-left">feel</td>
+</tr>
+
+<tr>
+<td class="org-right">476</td>
+<td class="org-left">försök</td>
+<td class="org-left">attempt</td>
+</tr>
+
+<tr>
+<td class="org-right">477</td>
+<td class="org-left">stå</td>
+<td class="org-left">stand</td>
+</tr>
+
+<tr>
+<td class="org-right">478</td>
+<td class="org-left">leva</td>
+<td class="org-left">live</td>
+</tr>
+
+<tr>
+<td class="org-right">479</td>
+<td class="org-left">kände</td>
+<td class="org-left">felt</td>
+</tr>
+
+<tr>
+<td class="org-right">480</td>
+<td class="org-left">ben</td>
+<td class="org-left">bone</td>
+</tr>
+
+<tr>
+<td class="org-right">481</td>
+<td class="org-left">började</td>
+<td class="org-left">started</td>
+</tr>
+
+<tr>
+<td class="org-right">482</td>
+<td class="org-left">varandra</td>
+<td class="org-left">each</td>
+</tr>
+
+<tr>
+<td class="org-right">483</td>
+<td class="org-left">dotter</td>
+<td class="org-left">daughter</td>
+</tr>
+
+<tr>
+<td class="org-right">484</td>
+<td class="org-left">jobbet</td>
+<td class="org-left">work</td>
+</tr>
+
+<tr>
+<td class="org-right">485</td>
+<td class="org-left">jack</td>
+<td class="org-left">jack</td>
+</tr>
+
+<tr>
+<td class="org-right">486</td>
+<td class="org-left">glöm</td>
+<td class="org-left">forget</td>
+</tr>
+
+<tr>
+<td class="org-right">487</td>
+<td class="org-left">ring</td>
+<td class="org-left">ring</td>
+</tr>
+
+<tr>
+<td class="org-right">488</td>
+<td class="org-left">skall</td>
+<td class="org-left">shall</td>
+</tr>
+
+<tr>
+<td class="org-right">489</td>
+<td class="org-left">igenom</td>
+<td class="org-left">through</td>
+</tr>
+
+<tr>
+<td class="org-right">490</td>
+<td class="org-left">uppe</td>
+<td class="org-left">up</td>
+</tr>
+
+<tr>
+<td class="org-right">491</td>
+<td class="org-left">egen</td>
+<td class="org-left">own</td>
+</tr>
+
+<tr>
+<td class="org-right">492</td>
+<td class="org-left">flicka</td>
+<td class="org-left">girl</td>
+</tr>
+
+<tr>
+<td class="org-right">493</td>
+<td class="org-left">någonting</td>
+<td class="org-left">anything</td>
+</tr>
+
+<tr>
+<td class="org-right">494</td>
+<td class="org-left">ikväll</td>
+<td class="org-left">tonight</td>
+</tr>
+
+<tr>
+<td class="org-right">495</td>
+<td class="org-left">dagen</td>
+<td class="org-left">day</td>
+</tr>
+
+<tr>
+<td class="org-right">496</td>
+<td class="org-left">skull</td>
+<td class="org-left">sake</td>
+</tr>
+
+<tr>
+<td class="org-right">497</td>
+<td class="org-left">räcker</td>
+<td class="org-left">enough</td>
+</tr>
+
+<tr>
+<td class="org-right">498</td>
+<td class="org-left">stället</td>
+<td class="org-left">instead</td>
+</tr>
+
+<tr>
+<td class="org-right">499</td>
+<td class="org-left">idiot</td>
+<td class="org-left">idiot</td>
+</tr>
+
+<tr>
+<td class="org-right">500</td>
+<td class="org-left">talar</td>
+<td class="org-left">speaks</td>
+</tr>
+
+<tr>
+<td class="org-right">501</td>
+<td class="org-left">kvinnor</td>
+<td class="org-left">women</td>
+</tr>
+
+<tr>
+<td class="org-right">502</td>
+<td class="org-left">herr</td>
+<td class="org-left">Mr.</td>
+</tr>
+
+<tr>
+<td class="org-right">503</td>
+<td class="org-left">ganska</td>
+<td class="org-left">quite</td>
+</tr>
+
+<tr>
+<td class="org-right">504</td>
+<td class="org-left">syster</td>
+<td class="org-left">Sister</td>
+</tr>
+
+<tr>
+<td class="org-right">505</td>
+<td class="org-left">fanns</td>
+<td class="org-left">was</td>
+</tr>
+
+<tr>
+<td class="org-right">506</td>
+<td class="org-left">sätta</td>
+<td class="org-left">put</td>
+</tr>
+
+<tr>
+<td class="org-right">507</td>
+<td class="org-left">reda</td>
+<td class="org-left">find</td>
+</tr>
+
+<tr>
+<td class="org-right">508</td>
+<td class="org-left">skolan</td>
+<td class="org-left">school</td>
+</tr>
+
+<tr>
+<td class="org-right">509</td>
+<td class="org-left">nere</td>
+<td class="org-left">down</td>
+</tr>
+
+<tr>
+<td class="org-right">510</td>
+<td class="org-left">new</td>
+<td class="org-left">New</td>
+</tr>
+
+<tr>
+<td class="org-right">511</td>
+<td class="org-left">miss</td>
+<td class="org-left">Miss</td>
+</tr>
+
+<tr>
+<td class="org-right">512</td>
+<td class="org-left">följa</td>
+<td class="org-left">follow</td>
+</tr>
+
+<tr>
+<td class="org-right">513</td>
+<td class="org-left">fin</td>
+<td class="org-left">nice</td>
+</tr>
+
+<tr>
+<td class="org-right">514</td>
+<td class="org-left">vatten</td>
+<td class="org-left">water</td>
+</tr>
+
+<tr>
+<td class="org-right">515</td>
+<td class="org-left">följer</td>
+<td class="org-left">follows</td>
+</tr>
+
+<tr>
+<td class="org-right">516</td>
+<td class="org-left">lätt</td>
+<td class="org-left">light</td>
+</tr>
+
+<tr>
+<td class="org-right">517</td>
+<td class="org-left">idé</td>
+<td class="org-left">idea</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: %m/%d/%Y at %H:%M</p>
+<p class="author">Author: Kevin Tian</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
